@@ -61,7 +61,7 @@ class DataTransformation:
                     continue
                 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
                 img = cv2.resize(img, (self.config.img_size, self.config.img_size))
-                img = preprocess_input(img)
+                #img = preprocess_input(img)
                 images.append(img)
 
             return np.array(images)
