@@ -8,12 +8,19 @@ from sklearn.preprocessing import FunctionTransformer
 from src.exception import CustomException
 from src.logger import logging
 
+#image sizing 
+import cv2
+#from tensorflow.keras.utils import to_categorical
+#from tensorflow.keras.applications.efficientnet import preprocess_input
+
 from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    
+
     preprocessor_obj_file_path = os.path.join('data', "preprocessor.pkl")
+    img_size: int = 224
+    num_classes: int = 5
 
 class DataTransformation:
     def __init__(self):
@@ -40,6 +47,28 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e, sys)
         
+    def load_and_preprocess_images(self, path_array):    
+        """
+        This replaces your notebook 'load_images' function.
+        Automates reading, resizing, and EfficientNet preprocessing.
+        """
+        try:
+            images = []
+            for path in path_array:
+                img = cv2.imread(path)
+                if img is None:
+                    logging.warning(f"Image not found at: {path}")
+                    continue
+                img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+                img = cv2.resize(img, (self.config.img_size, self.config.img_size))
+                img = preprocess_input(img)
+                images.append(img)
+
+            return np.array(images)
+        except Exception as e:
+            raise CustomException(e, sys)
+
+
     def initiate_data_transformation(self, train_path, test_path):
         try:
             train_df = pd.read_csv(train_path)
