@@ -56,4 +56,4 @@ if __name__=="__main__":
 
     #data transformation
     data_tranformation=DataTransformation()
-    train_arr,test_arr,_ = data_tranformation.initiate_data_transformation(train_data,test_data)
+    train_arr, train_label, test_arr, test_label, num_classes = data_tranformation.initiate_data_transformation(train_data, test_data)

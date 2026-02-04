@@ -105,8 +105,8 @@ class DataTransformation:
             
             #encoding is used to convert the labels 0,1,2,3,4 into [] , if 0 = [1,0,0,0,0 ]
             logging.info("Converting labels to categorical format")
-            y_train_cat = to_categorical(train_labels, num_classes=self.data_transformation_config.num_classes)
-            y_test_cat = to_categorical(test_labels, num_classes=self.data_transformation_config.num_classes)
+            y_train_cat = to_categorical(train_labels, num_classes=num_classes)
+            y_test_cat = to_categorical(test_labels, num_classes=num_classes)
 
             save_object(
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
@@ -123,7 +123,6 @@ class DataTransformation:
                 y_train_cat,
                 X_test_img,
                 y_test_cat,
-                self.data_transformation_config.preprocessor_obj_file_path,
                 num_classes
             )
         

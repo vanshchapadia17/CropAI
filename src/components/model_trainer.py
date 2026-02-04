@@ -20,7 +20,7 @@ class ModelTrainer:
     def __init__(self):
         self.model_trainer_config = ModelTrainerConfig()
 
-    def initiate_model_trainer(self, train_array, train_label, test_array, test_label, num_classes):
+    def initiate_model_trainer(self, X_train_img, y_train_cat, X_test_img, y_test_cat, num_classes):
         try:
             logging.info("Building the EfficientNetB0 model architecture")
 
@@ -53,8 +53,8 @@ class ModelTrainer:
             
             # 5. Training (Initial)
             model.fit(
-                train_array,
-                train_label,
+                X_train_img,
+                y_train_cat,
                 validation_data=(X_test_img, y_test_cat),
                 epochs=10,
                 batch_size=16 
@@ -72,8 +72,8 @@ class ModelTrainer:
             )
 
             model.fit(
-                train_array,
-                train_label,
+                X_train_img,      
+                y_train_cat,
                 validation_data=(X_test_img, y_test_cat),
                 epochs=5,
                 batch_size=16

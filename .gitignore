@@ -8,7 +8,11 @@ __pycache__/
 
 #mydataset
 data/
-static/
+# Ignore all files in the uploads folder
+static/uploads/*
+
+# But do NOT ignore the .gitkeep file
+!static/uploads/.gitkeep
 
 # Distribution / packaging
 .Python
