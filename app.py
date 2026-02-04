@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request, os
+from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
 from src.pipeline.predict_pipeline import PredictPipeline
-
+import os
 app = Flask(__name__)
 
 # Configure where to save uploaded photos
