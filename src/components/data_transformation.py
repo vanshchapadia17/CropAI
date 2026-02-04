@@ -18,7 +18,7 @@ from src.utils import save_object
 @dataclass
 class DataTransformationConfig:
 
-    preprocessor_obj_file_path = os.path.join('data', "preprocessor.pkl")
+    preprocessor_obj_file_path = os.path.join('artifacts', "preprocessor.pkl")
     img_size: int = 224
 
 class DataTransformation:
