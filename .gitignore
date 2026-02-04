@@ -8,6 +8,7 @@ __pycache__/
 
 #mydataset
 data/
+static/
 
 # Distribution / packaging
 .Python
