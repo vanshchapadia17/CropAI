@@ -15,8 +15,8 @@ class PredictPipeline:
     def predict(self, image_path):
         try:
             # 1. Define paths to our saved artifacts
-            model_path = os.path.join("data", "model.h5")
-            preprocessor_path = os.path.join("data", "preprocessor.pkl")
+            model_path = os.path.join("artifacts", "model.h5")
+            preprocessor_path = os.path.join("artifacts", "preprocessor.pkl")
 
             # 2. Load the model and the preprocessing settings
             model = load_model(model_path)

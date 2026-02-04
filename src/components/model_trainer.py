@@ -14,7 +14,7 @@ from src.utils import save_object
 @dataclass
 class ModelTrainerConfig:
     
-    trained_model_file_path = os.path.join("data", "model.h5")
+    trained_model_file_path = os.path.join("artifacts", "model.h5")
 
 class ModelTrainer:
     def __init__(self):
@@ -57,7 +57,7 @@ class ModelTrainer:
                 y_train_cat,
                 validation_data=(X_test_img, y_test_cat),
                 epochs=10,
-                batch_size=16 
+                batch_size=10
             )
 
             # 6. Fine-Tuning (Unfreezing)
@@ -76,7 +76,7 @@ class ModelTrainer:
                 y_train_cat,
                 validation_data=(X_test_img, y_test_cat),
                 epochs=5,
-                batch_size=16
+                batch_size=10
             )
 
             logging.info(f"Model training completed. Saving model to: {self.model_trainer_config.trained_model_file_path}")
