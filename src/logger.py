@@ -13,6 +13,9 @@ logging.basicConfig(
     filename=LOG_FILE_PATH,
     format="[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO,
+    force=True,
 
 )
 
+# Test line to verify it works immediately
+logging.info("Logger has been initialized successfully.")

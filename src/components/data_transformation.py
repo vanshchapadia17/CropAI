@@ -10,8 +10,8 @@ from src.logger import logging
 
 #image sizing 
 import cv2
-#from tensorflow.keras.utils import to_categorical
-#from tensorflow.keras.applications.efficientnet import preprocess_input
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.applications.efficientnet import preprocess_input
 
 from src.utils import save_object
 
@@ -20,7 +20,6 @@ class DataTransformationConfig:
 
     preprocessor_obj_file_path = os.path.join('data', "preprocessor.pkl")
     img_size: int = 224
-    num_classes: int = 5
 
 class DataTransformation:
     def __init__(self):
@@ -60,8 +59,8 @@ class DataTransformation:
                     logging.warning(f"Image not found at: {path}")
                     continue
                 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-                img = cv2.resize(img, (self.config.img_size, self.config.img_size))
-                #img = preprocess_input(img)
+                img = cv2.resize(img, (self.data_transformation_config.img_size, self.data_transformation_config.img_size))
+                img = preprocess_input(img)
                 images.append(img)
 
             return np.array(images)
@@ -89,16 +88,49 @@ class DataTransformation:
             # Save the directory if it doesn't exist
             os.makedirs(os.path.dirname(self.data_transformation_config.preprocessor_obj_file_path), exist_ok=True)
 
+            #image resizing
+            # DYNAMIC CLASS DETECTION
+            num_classes = len(train_df['croplabel'].unique())
+            logging.info(f"Detected {num_classes} unique classes.")
+
+            train_paths = train_df['path'].values
+            train_labels = train_df['croplabel'].values
+
+            test_paths = test_df['path'].values
+            test_labels = test_df['croplabel'].values
+
+            logging.info("image preprocessing start!")
+            X_train_img = self.load_and_preprocess_images(train_paths)
+            X_test_img = self.load_and_preprocess_images(test_paths)
+            
+            #encoding is used to convert the labels 0,1,2,3,4 into [] , if 0 = [1,0,0,0,0 ]
+            logging.info("Converting labels to categorical format")
+            y_train_cat = to_categorical(train_labels, num_classes=self.data_transformation_config.num_classes)
+            y_test_cat = to_categorical(test_labels, num_classes=self.data_transformation_config.num_classes)
+
             save_object(
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
-                obj=preprocessing_obj
+                obj={
+                    "img_size": self.data_transformation_config.img_size, 
+                    "num_classes": num_classes
+                    }
             )
 
+            logging.info("Data Transformation complete.")
+
             return (
-                train_data,
-                test_data,
+                X_train_img,
+                y_train_cat,
+                X_test_img,
+                y_test_cat,
                 self.data_transformation_config.preprocessor_obj_file_path,
+                num_classes
             )
         
         except Exception as e:
             raise CustomException(e, sys)
+        
+''' if __name__=="__main__":
+    # This ensures that when you run THIS file, the logging starts
+    logging.info("Testing the logger from Data Transformation")
+'''

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CropAI Prediction</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+        .result { margin-top: 20px; font-weight: bold; color: green; font-size: 24px; }
+        img { max-width: 400px; margin-top: 20px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h1>CropAI: Smart Detection</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Identify Crop</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">Detected: {{ prediction }}</div>
+        <img src="{{ image_path }}" alt="Uploaded Image">
+    {% endif %}
+</body>
+</html>

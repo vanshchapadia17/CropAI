@@ -6,4 +6,5 @@ seaborn
 dill
 tensorflow
 opencv-python
+flask
 -e .

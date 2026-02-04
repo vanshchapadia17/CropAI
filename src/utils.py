@@ -16,3 +16,24 @@ def save_object(file_path, obj):
 
     except Exception as e:
         raise CustomException(e, sys)
+
+def load_object(file_path):
+    """
+    Loads the saved objects (used later for prediction).
+    """
+    try:
+        with open(file_path, "rb") as file_obj:
+            return dill.load(file_obj)
+
+    except Exception as e:
+        raise CustomException(e, sys)
+    
+def evaluate_models(X_train, y_train, X_test, y_test, models, param):
+
+    try:
+        report = {}
+        # We will fill this logic when you are ready to test multiple architectures
+        return report
+
+    except Exception as e:
+        raise CustomException(e, sys)
