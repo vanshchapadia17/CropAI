@@ -2,10 +2,16 @@ import os
 import sys
 from dataclasses import dataclass
 
+import numpy as np
+from sklearn.metrics import classification_report, confusion_matrix
+
+import tensorflow as tf
+
 from tensorflow.keras.applications import EfficientNetB0
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
 from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import EarlyStopping
 
 from src.exception import CustomException
 from src.logger import logging
@@ -22,6 +28,18 @@ class ModelTrainer:
 
     def initiate_model_trainer(self, X_train_img, y_train_cat, X_test_img, y_test_cat, num_classes):
         try:
+
+            logging.info("Applying training-time augmentation")
+
+            early_stop = tf.keras.callbacks.EarlyStopping(
+                monitor="val_accuracy",
+                patience=4,
+                restore_best_weights=True
+            )
+
+            X_train_img = tf.convert_to_tensor(X_train_img, dtype=tf.float32)
+            X_test_img  = tf.convert_to_tensor(X_test_img, dtype=tf.float32)
+
             logging.info("Building the EfficientNetB0 model architecture")
 
             # 1. Load the Base Model
@@ -34,50 +52,107 @@ class ModelTrainer:
             # 2. Freeze the base layers (Transfer Learning)
             base_model.trainable = False
 
-            # 3. Add custom layers for CropAI
-            x = base_model.output
-            x = GlobalAveragePooling2D()(x)
-            x = Dropout(0.4)(x) # Help prevent overfitting on small datasets
-            output = Dense(num_classes, activation="softmax")(x)
+            data_augmentation = tf.keras.Sequential([
+                tf.keras.layers.RandomFlip("horizontal"),
+                tf.keras.layers.RandomRotation(0.25),
+                tf.keras.layers.RandomZoom(0.3),
+                tf.keras.layers.RandomContrast(0.3),
+                tf.keras.layers.RandomBrightness(0.2),
+            ])
 
-            model = Model(inputs=base_model.input, outputs=output)
+            # 3. Add custom layers for CropAI
+            inputs = base_model.input
+            x = data_augmentation(inputs)
+            x = base_model(x, training=False)
+            x = GlobalAveragePooling2D()(x)
+            x = Dropout(0.4)(x)
+            outputs = Dense(num_classes, activation="softmax")(x)
+
+            model = Model(inputs, outputs)
 
             # 4. Compile the model
             model.compile(
-                optimizer=Adam(learning_rate=0.001),
-                loss="categorical_crossentropy",
+                optimizer=Adam(learning_rate=1e-4),
+                loss=tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.1),
                 metrics=["accuracy"]
             )
 
             logging.info("Starting initial model training (Frozen Base)")
-            
+
             # 5. Training (Initial)
             model.fit(
                 X_train_img,
                 y_train_cat,
                 validation_data=(X_test_img, y_test_cat),
-                epochs=10,
-                batch_size=10
+                epochs=5,
+                batch_size=10,
+                callbacks=[early_stop]
             )
 
             # 6. Fine-Tuning (Unfreezing)
             logging.info("Starting fine-tuning (Unfreezing base model)")
-            base_model.trainable = True
+            for layer in base_model.layers[:-50]:
+                layer.trainable = False
+            for layer in base_model.layers[-50:]:
+                layer.trainable = True
             
             # Recompile with a much lower learning rate for fine-tuning
             model.compile(
-                optimizer=Adam(learning_rate=1e-5),
-                loss="categorical_crossentropy",
+                optimizer=Adam(learning_rate=5e-6),
+                loss=tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.1),
                 metrics=["accuracy"]
             )
 
+            class_weight = {
+                            0: 1.0,
+                            1: 1.3,
+                            2: 1.3,
+                            3: 1.0,
+                            4: 1.4
+                            }
             model.fit(
                 X_train_img,      
                 y_train_cat,
                 validation_data=(X_test_img, y_test_cat),
-                epochs=5,
-                batch_size=10
+                epochs=10,
+                batch_size=16,
+                class_weight=class_weight,
+                callbacks=[early_stop]
             )
+
+            logging.info("Generating evaluation metrics")
+
+            # Predict probabilities
+            y_pred_probs = model.predict(X_test_img)
+
+            # Convert probabilities to class labels
+            y_pred = np.argmax(y_pred_probs, axis=1)
+            y_true = np.argmax(y_test_cat, axis=1)
+
+            
+            # Classification report
+            report = classification_report(
+                y_true,
+                y_pred,
+                digits=4
+            )
+
+            logging.info("Classification Report:\n" + report)
+            print("\nClassification Report:\n", report)
+
+            # Confusion Matrix
+            cm = confusion_matrix(y_true, y_pred)
+            logging.info(f"Confusion Matrix:\n{cm}")
+            print("\nConfusion Matrix:\n", cm)
+
+            os.makedirs("artifacts", exist_ok=True)
+
+            with open("artifacts/metrics.txt", "w") as f:
+                f.write("Classification Report:\n")
+                f.write(report) 
+                f.write("\n\nConfusion Matrix:\n")
+                f.write(str(cm))
+
 
             logging.info(f"Model training completed. Saving model to: {self.model_trainer_config.trained_model_file_path}")
 

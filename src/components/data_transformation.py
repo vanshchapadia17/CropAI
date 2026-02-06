@@ -12,6 +12,8 @@ from src.logger import logging
 import cv2
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.applications.efficientnet import preprocess_input
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
 
 from src.utils import save_object
 
@@ -55,11 +57,13 @@ class DataTransformation:
             images = []
             for path in path_array:
                 img = cv2.imread(path)
-                if img is None:
-                    logging.warning(f"Image not found at: {path}")
+                if img is None or len(img.shape) != 3:
+                    logging.warning(f"Image not found at: {path}") #changed this
                     continue
                 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-                img = cv2.resize(img, (self.data_transformation_config.img_size, self.data_transformation_config.img_size))
+                img = cv2.resize(img, (self.data_transformation_config.img_size, 
+                                       self.data_transformation_config.img_size),
+                                       interpolation=cv2.INTER_AREA) #changed this
                 img = preprocess_input(img)
                 images.append(img)
 
@@ -128,6 +132,9 @@ class DataTransformation:
         
         except Exception as e:
             raise CustomException(e, sys)
+        
+
+
         
 ''' if __name__=="__main__":
     # This ensures that when you run THIS file, the logging starts
