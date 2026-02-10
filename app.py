@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask_cors import CORS #for react and flask connection
 from werkzeug.utils import secure_filename
 import os
 
