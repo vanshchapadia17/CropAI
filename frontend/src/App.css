@@ -1,0 +1,42 @@
+body {
+  background: radial-gradient(circle, #0f172a, #020617);
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  width: 380px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+  color: white;
+}
+
+button {
+  background: linear-gradient(135deg, #22d3ee, #38bdf8);
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.thinking {
+  margin-top: 15px;
+  color: #38bdf8;
+}
+
+.result img {
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 10px;
+}

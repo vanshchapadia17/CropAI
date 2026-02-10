@@ -7,4 +7,5 @@ dill
 tensorflow
 opencv-python
 flask
+flask-cors
 -e .
