@@ -5,8 +5,8 @@ import numpy as np
 import cv2
 from src.exception import CustomException
 from src.utils import load_object
-from tensorflow.keras.models import load_model
-from tensorflow.keras.applications.efficientnet import preprocess_input
+from tensorflow.keras.models import load_model # type: ignore
+from tensorflow.keras.applications.efficientnet import preprocess_input # type: ignore
 
 class PredictPipeline:
     def __init__(self):
@@ -37,12 +37,10 @@ class PredictPipeline:
 
             # 4. Get Prediction
             preds = model.predict(img)
-            
-            # np.argmax picks the index of the highest probability
-            # e.g., if [0.1, 0.1, 0.7, 0.1], it picks index 2
             result = np.argmax(preds, axis=1)
+            confidence = float(np.max(preds) * 100)
             
-            return result[0]
+            return result[0],confidence
 
         except Exception as e:
             raise CustomException(e, sys)

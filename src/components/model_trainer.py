@@ -7,11 +7,11 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 import tensorflow as tf
 
-from tensorflow.keras.applications import EfficientNetB0
-from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.callbacks import EarlyStopping
+from tensorflow.keras.applications import EfficientNetB0 # type: ignore
+from tensorflow.keras.models import Model # type: ignore
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout # type: ignore
+from tensorflow.keras.optimizers import Adam # type: ignore
+from tensorflow.keras.callbacks import EarlyStopping # type: ignore
 
 from src.exception import CustomException
 from src.logger import logging
@@ -54,9 +54,8 @@ class ModelTrainer:
 
             data_augmentation = tf.keras.Sequential([
                 tf.keras.layers.RandomFlip("horizontal"),
-                tf.keras.layers.RandomRotation(0.25),
-                tf.keras.layers.RandomZoom(0.3),
-                tf.keras.layers.RandomContrast(0.3),
+                tf.keras.layers.RandomRotation(0.05),
+                tf.keras.layers.RandomZoom(0.1),
                 tf.keras.layers.RandomBrightness(0.2),
             ])
 
@@ -105,10 +104,10 @@ class ModelTrainer:
 
             class_weight = {
                             0: 1.0,
-                            1: 1.3,
-                            2: 1.3,
-                            3: 1.0,
-                            4: 1.4
+                            1: 1.0,
+                            2: 1.8,
+                            3: 1.2,
+                            4: 1.0
                             }
             model.fit(
                 X_train_img,      

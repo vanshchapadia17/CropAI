@@ -10,9 +10,9 @@ from src.logger import logging
 
 #image sizing 
 import cv2
-from tensorflow.keras.utils import to_categorical
-from tensorflow.keras.applications.efficientnet import preprocess_input
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.utils import to_categorical # type: ignore
+from tensorflow.keras.applications.efficientnet import preprocess_input # type: ignore
+from tensorflow.keras.preprocessing.image import ImageDataGenerator # type: ignore
 
 
 from src.utils import save_object

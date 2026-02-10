@@ -32,11 +32,13 @@ def index():
             # Note: We need to map the number (0, 1, 2) back to a name
             crop_map = {0: "Jute", 1: "Maize", 2: "Rice", 3: "Sugarcane", 4: "Wheat"}
             
-            prediction_idx = pipeline.predict(file_path)
+            prediction_idx , confidence = pipeline.predict(file_path)
             result = crop_map.get(prediction_idx, "Unknown")
+            confidence=round(confidence, 2)
 
             return render_template('index.html', 
-                                 prediction=result, 
+                                 prediction=result,
+                                 confidence=confidence,
                                  image_path=file_path)
 
     return render_template('index.html')
