@@ -7,24 +7,27 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const formData = new FormData();
-  formData.append("file", image);
+    setLoading(true);
+    const formData = new FormData();
+    formData.append("file", file);
 
-  try {
-    const res = await fetch("http://localhost:5000/predict", {
-      method: "POST",
-      body: formData
-    });
+    try {
+      const res = await fetch("http://localhost:5000/predict", {
+        method: "POST",
+        body: formData
+      });
 
-    const data = await res.json();
-    setResult(data);
+      const data = await res.json();
+      setResult(data);
 
-  } catch (error) {
-    console.error("Error:", error);
-  }
- };
+    } catch (error) {
+      console.error("Error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="container">
@@ -41,7 +44,7 @@ function App() {
           <div className="result">
             <h2>{result.crop}</h2>
             <p>Confidence: {result.confidence}%</p>
-            <img src={`http://127.0.0.1:5000/${result.image}`} alt="crop" />
+            <img src={result.image} alt="crop" />
           </div>
         )}
       </div>
