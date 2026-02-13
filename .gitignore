@@ -10,9 +10,10 @@ __pycache__/
 data/
 # Ignore all files in the uploads folder
 static/uploads/*
-
+static/disease/*
 # But do NOT ignore the .gitkeep file
 !static/uploads/.gitkeep
+!static/disease/.gitkeep
 
 # Distribution / packaging
 .Python
