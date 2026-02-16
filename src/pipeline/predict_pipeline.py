@@ -19,7 +19,7 @@ class PredictPipeline:
             preprocessor_path = os.path.join("artifacts", "preprocessor.pkl")
 
             # 2. Load the model and the preprocessing settings
-            model = load_model(model_path)
+            model = load_model(model_path, compile=False)
             # This is the dictionary we saved: {"img_size": 224, "num_classes": 5}
             preprocess_dict = load_object(file_path=preprocessor_path)
 

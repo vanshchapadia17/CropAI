@@ -11,9 +11,11 @@ data/
 # Ignore all files in the uploads folder
 static/uploads/*
 static/disease/*
+static/chat/*
 # But do NOT ignore the .gitkeep file
 !static/uploads/.gitkeep
 !static/disease/.gitkeep
+!static/chat/.gitkeep
 
 # Distribution / packaging
 .Python

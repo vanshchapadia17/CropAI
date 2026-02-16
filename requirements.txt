@@ -9,4 +9,6 @@ opencv-python
 flask
 flask-cors
 langchain
+langchain-groq
+python-dotenv
 -e .

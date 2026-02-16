@@ -16,7 +16,7 @@ class DiseasePredictPipeline:
             model_path = os.path.join("artifacts", "disease_model.h5")
             preprocessor_path = os.path.join("artifacts", "disease_preprocessor.pkl")
 
-            model = load_model(model_path)
+            model = load_model(model_path, compile=False)
             preprocess_dict = load_object(file_path=preprocessor_path)
 
             img_size = preprocess_dict["img_size"]
