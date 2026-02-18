@@ -11,4 +11,5 @@ flask-cors
 langchain
 langchain-groq
 python-dotenv
+faiss-cpu
 -e .
