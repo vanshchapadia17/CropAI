@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS #for react and flask connection
 from werkzeug.utils import secure_filename
 import os
+import json
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -10,6 +11,7 @@ load_dotenv()
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "CropAI"
 
+from langchain_core.messages import HumanMessage, AIMessage
 from src.pipeline.predict_pipeline import PredictPipeline
 from src.pipeline.disease_predict_pipeline import DiseasePredictPipeline
 from src.agents.brain_agent import BrainAgent
@@ -103,81 +105,40 @@ brain = BrainAgent()
 def chat():
     try:
         message = request.form.get("message", "")
+        chat_history_raw = request.form.get("chat_history", "[]")
+
+        # Parse chat history from frontend into LangChain message objects
+        chat_history = []
+        for msg in json.loads(chat_history_raw):
+            if msg["role"] == "user":
+                chat_history.append(HumanMessage(content=msg["text"]))
+            elif msg["role"] == "bot":
+                chat_history.append(AIMessage(content=msg["text"]))
+
+        # Handle file upload
+        image_path = None
+        image_url = None
         has_file = "file" in request.files and request.files["file"].filename != ""
-
-        # Detect intent from user's message
-        intent = brain.detect_intent(message)
-
-        # If image is provided, route to the appropriate classifier
-        if has_file and intent in ("crop", "disease"):
+        if has_file:
             file = request.files["file"]
             filename = secure_filename(file.filename)
             file_path = os.path.join(CHAT_UPLOAD_FOLDER, filename)
             file.save(file_path)
+            image_path = file_path
             image_url = f"http://localhost:5000/static/chat/{filename}"
 
-            if intent == "crop":
-                pipeline = PredictPipeline()
-                crop_idx, confidence = pipeline.predict(file_path)
-                classification = {
-                    "crop": CROP_MAP[crop_idx],
-                    "confidence": round(confidence, 2)
-                }
-                response_text = brain.format_response(message, intent, classification)
-                return jsonify({
-                    "response": response_text,
-                    "intent": intent,
-                    "crop": classification["crop"],
-                    "confidence": classification["confidence"],
-                    "image": image_url
-                })
+        # Run the agent
+        response_text = brain.run(
+            user_message=message,
+            chat_history=chat_history,
+            image_path=image_path
+        )
 
-            elif intent == "disease":
-                pipeline = DiseasePredictPipeline()
-                disease_idx, confidence = pipeline.predict(file_path)
-                classification = {
-                    "disease": DISEASE_MAP[disease_idx],
-                    "confidence": round(confidence, 2)
-                }
-                response_text = brain.format_response(message, intent, classification)
-                return jsonify({
-                    "response": response_text,
-                    "intent": intent,
-                    "disease": classification["disease"],
-                    "confidence": classification["confidence"],
-                    "image": image_url
-                })
+        result = {"response": response_text}
+        if image_url:
+            result["image"] = image_url
 
-        elif has_file and intent == "general":
-            # Image uploaded but question is general — default to crop classification
-            file = request.files["file"]
-            filename = secure_filename(file.filename)
-            file_path = os.path.join(CHAT_UPLOAD_FOLDER, filename)
-            file.save(file_path)
-            image_url = f"http://localhost:5000/static/chat/{filename}"
-
-            pipeline = PredictPipeline()
-            crop_idx, confidence = pipeline.predict(file_path)
-            classification = {
-                "crop": CROP_MAP[crop_idx],
-                "confidence": round(confidence, 2)
-            }
-            response_text = brain.format_response(message, "crop", classification)
-            return jsonify({
-                "response": response_text,
-                "intent": "crop",
-                "crop": classification["crop"],
-                "confidence": classification["confidence"],
-                "image": image_url
-            })
-
-        else:
-            # No image — handle as general text query
-            response_text = brain.handle_general_query(message)
-            return jsonify({
-                "response": response_text,
-                "intent": "general"
-            })
+        return jsonify(result)
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500

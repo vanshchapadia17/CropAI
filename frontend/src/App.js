@@ -30,6 +30,13 @@ function App() {
     formData.append("message", input);
     if (file) formData.append("file", file);
 
+    // Send chat history for conversation memory
+    const historyForBackend = messages.map(msg => ({
+      role: msg.role,
+      text: msg.text || ""
+    }));
+    formData.append("chat_history", JSON.stringify(historyForBackend));
+
     setInput("");
     setFile(null);
     if (fileInputRef.current) fileInputRef.current.value = "";
@@ -49,9 +56,6 @@ function App() {
           role: "bot",
           text: data.response,
           image: data.image || null,
-          confidence: data.confidence || null,
-          label: data.crop || data.disease || null,
-          intent: data.intent
         };
         setMessages(prev => [...prev, botMsg]);
       }
@@ -82,12 +86,6 @@ function App() {
             {msg.role === "bot" && <span className="avatar">🤖</span>}
             <div className="bubble">
               {msg.text && <p>{msg.text}</p>}
-              {msg.label && msg.confidence && (
-                <div className="classification-badge">
-                  <span className="label">{msg.label}</span>
-                  <span className="confidence">{msg.confidence}%</span>
-                </div>
-              )}
               {msg.image && <img src={msg.image} alt="uploaded" />}
             </div>
             {msg.role === "user" && <span className="avatar">👤</span>}
