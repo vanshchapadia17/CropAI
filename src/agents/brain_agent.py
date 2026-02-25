@@ -42,13 +42,23 @@ When the user says "yes" after crop identification (AND no image is uploaded):
 When the user uploads a leaf image after seeing the disease list:
 - Use the detect_disease tool to analyze it.
 
+DISEASE TO CROP MAPPING — these are hardcoded facts, never override them:
+- Rice diseases ONLY: Bacterial Blight, Blast, Brown Spot, Tungro
+- Sugarcane diseases ONLY: Healthy, Mosaic, Red Rot, Rust, Yellow
+
 When detect_disease tool returns a result:
 - FIRST, always state: "I detected **[Disease Name]** with **[Confidence]%** confidence."
-- THEN, tell the user which crop this disease belongs to:
-  * Rice diseases: Bacterial Blight, Blast, Brown Spot, Tungro
-  * Sugarcane diseases: Healthy, Mosaic, Red Rot, Rust, Yellow
-- IMPORTANT: Check the chat history! If you already identified the crop earlier in the conversation (e.g., you previously said "I identified this as Rice/Sugarcane"), do NOT ask the user to upload a crop image again. Instead say something like "This [Disease] disease is commonly found in [Crop] which matches the crop I identified earlier."
-- Only suggest "Upload a full crop image if you'd like to confirm the crop type" if the user uploaded a leaf image WITHOUT any prior crop identification in the conversation.
+- THEN, use the DISEASE TO CROP MAPPING above to determine which crop the detected disease actually belongs to.
+- THEN, check the chat history to see if a crop was previously identified.
+
+  CASE 1 — detected disease belongs to the SAME crop as the previously identified crop in the context:
+    → Say: "This disease is commonly found in [correct crop from mapping], which matches the [previously identified crop] I identified earlier."
+
+  CASE 2 — detected disease belongs to a DIFFERENT crop than the previously identified crop in the context:
+    → Use the ACTUAL crop names. Say: "However, [Disease Name] is actually a [correct crop from mapping] disease, not a [previously identified crop from context] disease. It looks like you may have uploaded the wrong leaf image. Please upload a [previously identified crop from context] leaf image."
+
+  CASE 3 — no [Previously identified crop] in the context:
+    → Say: "This disease is commonly found in [correct crop from mapping]. Upload a full crop image if you'd like to confirm the crop type."
 
 When no image is uploaded:
 - If the user directly asks about disease without an image, ask them to upload a leaf image.
@@ -62,7 +72,8 @@ class BrainAgent:
     def __init__(self):
         llm = ChatGroq(
             model="llama-3.1-8b-instant",
-            groq_api_key=os.environ.get("GROQ_API_KEY")
+            groq_api_key=os.environ.get("GROQ_API_KEY"),
+            max_tokens=500,
         )
 
         tools = [classify_crop, detect_disease]
@@ -89,13 +100,19 @@ class BrainAgent:
             # Set the shared image path so tools can access it directly
             agent_tools.current_image_path = image_path
 
+            # Inject previously identified crop so LLM doesn't have to search history
+            crop_context = ""
+            if agent_tools.last_identified_crop:
+                crop_context = f"[Previously identified crop in this session: {agent_tools.last_identified_crop}]\n"
+
             if image_path:
                 augmented_message = (
+                    f"{crop_context}"
                     f"[The user has uploaded an image. Use the appropriate tool to analyze it.]\n"
                     f"User message: {user_message}"
                 )
             else:
-                augmented_message = user_message
+                augmented_message = f"{crop_context}{user_message}"
 
             logging.info(f"Agent input: {augmented_message}")
 

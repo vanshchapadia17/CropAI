@@ -64,7 +64,7 @@ class ModelTrainer:
             x = data_augmentation(inputs)
             x = base_model(x, training=False)
             x = GlobalAveragePooling2D()(x)
-            x = Dropout(0.4)(x)
+            x = Dropout(0.2)(x)
             outputs = Dense(num_classes, activation="softmax")(x)
 
             model = Model(inputs, outputs)
@@ -72,7 +72,7 @@ class ModelTrainer:
             # 4. Compile the model
             model.compile(
                 optimizer=Adam(learning_rate=1e-4),
-                loss=tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.1),
+                loss=tf.keras.losses.CategoricalCrossentropy(),
                 metrics=["accuracy"]
             )
 
@@ -98,7 +98,7 @@ class ModelTrainer:
             # Recompile with a much lower learning rate for fine-tuning
             model.compile(
                 optimizer=Adam(learning_rate=5e-6),
-                loss=tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.1),
+                loss=tf.keras.losses.CategoricalCrossentropy(),
                 metrics=["accuracy"]
             )
 

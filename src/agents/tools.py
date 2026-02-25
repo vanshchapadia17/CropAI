@@ -9,8 +9,9 @@ DISEASE_MAP = {
     4: "Mosaic", 5: "Red Rot", 6: "Rust", 7: "Tungro", 8: "Yellow"
 }
 
-# Shared state: the actual image path set by the /chat endpoint before agent runs
+# Shared state set by brain_agent before each run
 current_image_path = None
+last_identified_crop = None   # tracks last crop classified in this session
 
 @tool
 def classify_crop(query: str) -> str:
@@ -20,10 +21,12 @@ def classify_crop(query: str) -> str:
     Returns the crop name and confidence percentage."""
     if current_image_path is None:
         return "Error: No image has been uploaded. Please ask the user to upload a crop image."
+    import src.agents.tools as _self
     logging.info(f"classify_crop tool called with image: {current_image_path}")
     pipeline = PredictPipeline()
     crop_idx, confidence = pipeline.predict(current_image_path)
     crop_name = CROP_MAP[crop_idx]
+    _self.last_identified_crop = crop_name   # remember for disease cross-check
     return f"Crop: {crop_name}, Confidence: {round(confidence, 2)}%"
 
 @tool
