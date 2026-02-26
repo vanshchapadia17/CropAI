@@ -12,4 +12,9 @@ langchain
 langchain-groq
 python-dotenv
 faiss-cpu
+langchain-core
+langchain-community
+pypdf
+pymupdf
+sentence-transformers
 -e .
