@@ -1,0 +1,23 @@
+Source: http://www.agritech.tnau.ac.in/expert_system/sugar/aboutus.html
+
+Expert System for Sugarcane
+Expert System For Sugarcane
+Home
+|
+About Us
+|
+Contact Us
+Objective :
+The proposed project aims development of expert system for crop and animal enterprises facilitating instant decision making process of the farmers through ICT enabled mechanism.
+The expert system will also be synchronized with the existing KVK e-linking system for its implementation. The specific objective of the project is to develop expert system for crop and animal enterprises for instsnt decision making.
+Lead Centre :
+Directorate of Research on Women in Agriculture, Bhuvaneshwar.
+Other Network Centres :
+Zonal Coordinating Unit, Zone VIII, Bangalore, Karnataka.
+Directorate of Extension Education, Tamil Nadu Agricultural University, Coimbatore, Tamil Nadu.
+Directorate of Extension Education, TANUVASU, Chennai, Tamil Nadu.
+Resources Centres :
+Kannada - Indian Institute of Science, Bangalore.
+Malayalam - C-DAC, Thiruvananthapuram.
+Tamil - Anna University, Chennai.
+Copyright © TNAU | All Rights Reserved

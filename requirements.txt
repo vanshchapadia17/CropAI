@@ -17,4 +17,7 @@ langchain-community
 pypdf
 pymupdf
 sentence-transformers
+requests
+beautifulsoup4
+python-docx
 -e .

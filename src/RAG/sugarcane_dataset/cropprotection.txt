@@ -1,0 +1,527 @@
+Source: http://www.agritech.tnau.ac.in/expert_system/sugar/cropprotection.html
+
+Expert System for Sugarcane
+Expert System For Sugarcane
+Home
+|
+About Us
+|
+Contact Us
+Categories
+Botany & Climate
+Season & Varieties
+Nursery Management
+Cultivation Practices
+Sustainable Sugarcane Initiative
+Irrigation Management
+Nutrient Management
+Crop Protection
+Farm Implements
+Post Harvest Technology
+Marketing
+Institutions & Schemes
+FAQ's
+Related Links
+Crop Protection
+About Crop Protection
+Pest Management
+Disease Management
+Pest Management
+Sugarcane  crop is affected by more than 60 insects of which about 10 insects are rather  more important as far as the yield loss is concerned. Among the major insects  damaging sugarcane, borers, sucking pests, soil dwelling insects are more  prevalent in Tamil Nadu and adjoining states which account 20% loss in cane  yield 15% loss in sugar yield.
+Sl.No
+Common Name
+Scientific Name
+Family
+Order
+1
+Early shoot borer
+Chilo infuscatellus
+Crambidae
+Lepidoptera
+2
+Internode borer
+Chilo sacchariphagus indicus
+Crambidae
+Lepidoptera
+3
+Top borer
+Scirphophaga excerptalis
+Pyralidae
+Lepidoptera
+4
+Termites
+Odontotermes obesus
+Termitidae
+Isoptera
+5
+White grubs
+Holotrichia Consanguinea
+Melolonthidae
+COleoptera
+6
+Woolly aphid
+Ceratovacuna lanigera
+Phempigidae
+Hemiptera
+7
+White fly
+Aleurolobus barodensis
+Neomaskellia bergii
+N . andropogonis
+Aleyrodidae
+Hemiptera
+8
+Mealy bug
+Saccharicoccus sacchari
+Pseudococcidae
+Hemiptera
+9
+Scale insects
+Melanaspis glomerata
+Diaspididae
+Hemiptera
+10
+Nematode
+Reniform nematode - Rotylenchulus reniformis
+.
+Root    knot nematode –
+Meloidogyne spp
+Lance    nematode –
+Hoplolaimus indicus
+Lesion nematode -
+Pratylenchus coffeae
+Trichostrongylidae
+Monhysterida
+11
+Grasshopper
+Early shoot borer,
+Chilo infuscatellus snellen
+Discription:
+Tamil Nadu, Andra Pradesh, U.P.,  Bihar, West Bengal, Maharastra, Madhya Pradesh, Punjab, Rajasthan. In Tamil  Nadu, its occurance is noted in all sugarcane growing areas.
+Symptom of damage:
+Dead  heart in 1-3 month old crop, which can be easily pulled out, rotten portion of  the straw coloured dead – heart emites an offensive odour. A number of bore  holes at the base of the shoot just above the ground level.
+Life cycle:
+Egg:
+Flat – scale like eggs are       laid in 3-5 rows on the lower surface of leaves in masses of 4-100. The       masses are slightly overlapping like tiles. It hatches 4-6days.
+Larva:
+Larva is dirty white with five       dark violet longitudinal stripes and dark brown head. Duration 16-30days.
+Pupa:
+Pupation takes within the       tunnel. Caterpillar before pupating makes a large exit hole in the stem       and blocks the opening with silken discs.
+Adult:
+Pale greyish brown moth with       black dots near the coastal margin of the forewings and with white hind wings.
+Management:
+Cultural method:
+Use        resistant varities like CO 312, CO 421, CO 661, CO 917 and CO 853
+Early        planting during December – January escapes the shoot borer incidence.
+Daincha        intercropped sugarcane record the lowest early shoot borer incidence.
+Trash        mulching along the ridges to a thickness of 10-15 cm 3 days after        planting.
+Ensure        adequate moisture to bring down the soil temperature and increase humidity        (unfavourable condition for the multiplication of early shoots borer).
+Physical method:
+Remove        and destroy dead hearts.
+Biological method:
+Apply        granulosis virus 1.1 x 10 5 IBS / ml (750 diseased larvae /        ha) twice on 35 and 50 DAP.
+Release        125 gravid females of sturmiopsis inferens a tachinid parasite per ac.
+Chemical method
+Apply        any one of the following insecticides if the pest crosses ETL.
+Carboryl        +Lindane (Sevidol) 4% G 12.5 kg, lindane 10 G 12.5 kg, Carbofuron 3G 33        kg (Soil application). The granular application should be immediately        followed by irrigation.
+Chlorpyriphos        1000 ml a sticker like Teepol (250 ml / 500 l of water) can also be added        to make the solution stick on to the surface of the crop and it is        preferable to use high volume sprayer to be most effective.
+Internode Borer,
+Chilo sacchariphagus indicus
+(Kapur)
+Distribution:
+Major pest in tropical India
+Symptom of damage:
+Internodes  constricted and shortened, with a number of boreholes and fresh excreta in the  nodal region. Affected tissues reddened.
+Nature of damage:
+Caterpillars  attack sugarcane plants after 3 months of planting. They bore into the canes  near the nodes; entry holes are plugged with excreta. Entry is generally  confined to the first five internodes.
+Life cycle:
+Egg:
+Scale – like oval, flat, shiny and       waxy white       eggs are laid by female moths in batches of 9-11, near the midribs, on       leaf sheaths or on stem.
+Larva:
+White larva with four violet       longitudinal stripes and light brown head.
+Pupa:
+Pupation takes place in semi       – dried sheath. Pupal       period 7 - 10 days
+Adult:
+straw coloured with a dark spot on       each of the forewings
+Management:
+Cultural method:
+Use resistant varities like CO       975,COJ 46 and CO 7304
+Select internode borer damage       free setts for planting
+Detrashing       & burying the trash during the 5th, 7th and 9th month
+Physical method:
+Collect and destroy the eggs       periodically.
+Detrash the crop on 150th       and 210th day of planting. Detrashing dislodge the pupae that       remain in the leaf sheath.
+Biological method:
+Release egg parasite,       Trichogramma chilonis at the rate of 2.5 cc / release / ha. Six release at       fortnightly intervals starting from 4th month onwards.
+Setting pheromone traps at spindle level
+on       5th month of the crop at the rate of 6 traps per acre in a 15 metre grid.       The pheromone septa need to be changed twice at 75 days interval.
+Chemical method
+:
+Avoid the use of excessive       nitrogenous fertilizers.
+Top Borer,
+Scirpophaa excerptalis (Fb.)
+Distribution:
+Present in all states. In Tamil  Nadu it is severe in Trichy, Tanjore and Cuddalore districts.
+Symptom of damage:
+Dead       heart arise on after       sixth month grown up canes, which       cannot be easily pulled.
+Parallel       row of shot holes in the emerging leaves.
+Bore holes at the top of the shoot and shows       bunchy top appearance.
+Nature of damage:
+Caterpillars  are mainly found in the apical portion of the canes, boring through the growing  point and down the upper joints until it reaches the sappy portion of the stem,  there it feeds on the tissues and destroys the cane. They also bore into the  unfolded  leaves preferably into the  midrib, mining its way to the base.
+Life cycle:
+Egg:
+Eggs are laid on the lower       surface of top leaves in clusters particularly near midribs. The clusters       are covered with buff coloured hairs. : 10-80 eggs per egg mass
+Larva:
+Smooth, white or cream       coloured with a red coloured mid – dorsal line and yellow head.
+Pupa:
+Pupation takes place within       the larval tunnel in a chamber with an exit hole Constructed by the       caterpillar. Pupal       period  6 - 21 days
+Adult:
+White Coloured moth (with a       buff Coloured anal tuft in the abdominal tip of female)
+Management
+:
+Cultural method:
+Use resistant variety CO 419,       CO 745 and CO 6516 and tolerant varieties Co 859, Co 1158 and Co 7224.
+Physical method:
+Collect and destroy the egg       masses.
+Biological method:
+Release Ichneumonid       parasitized Gambroides (Isotima) javensis @ 100 pairs / ha as prepupal       parasitoid.
+Chemical method:
+Application       of Carbofuran 3G 1 kg a.i/ha       or Thimet 10G 3       kg a.i/ha
+Termites,
+Odontotermes obesus Rhamb
+Symptom of damage:
+Poor  germination of setts (after planting), characteristic semi – circular feeding  marks on the margin of the leaves in the standing crop. Causes yellowing and drying of  outer leaves first followed by the inner leaves Entire shoot dries up and can be  pulled out. Setts hollow inside and may be filled with soil. Cane collapses if  disturbed; rind filled with mud.
+Life cycle:
+Eggs:
+Dull, kidney shaped and  hatches in 30-90 days
+Nymphs
+: Moult 8-9 times and are full  grown in 6-12 months
+Adult:
+Creamy coloured tiny insects resembling ants  with dark coloured head
+Management
+:
+Cultural method:
+Flood irrigation at the time of planting.
+Physical method:
+Locate and destroy the termite colony.
+Collect and destroy the termite affected setts from the  field.
+Chemical method:
+Fumigate the termite mounds with aluminium phosphate 2  tablets / 1 meter/Mounds.
+Dip the setts in imidacloprid 70WS 0.1% or chlopyriphos 20  EC 0.04% for 5min.
+Treat the soil with lindane 1.6 D @ 50 kg / ha or
+Apply 125 kg of heptachlor 3 % D per ha in the furrows at  time of planting.
+White Grub, Holotrichia consanguinea (Blanch)
+Symptom of damage:
+Yellowing and wilting of leaves.
+Drying of entire crown.
+Affected canes come off easily when pulled.
+Cause extensive damage to roots and base of shoot.
+Life cycle:
+Egg:
+A female  lays on an average of 27 eggs in the soil, which are pear like white enclosed  in earthen cells.
+Grub:
+Fleshy ‘C’ shaped, whitish yellow  in colour found close to the base of the clump.
+Pupa
+:  Pupae are tan to brown, and occur deeper in the soil in earthen chambers.
+Adult:
+Adult  beetles are a rusty-red color just after emerging from the pupal stage, but  turn nearly black.
+Management:
+Cultural method:
+Provide adequate irrigation.
+Deep ploughing immediately       after harvesting.
+Physical method:
+Set up light trap.
+Collect and destroy the adult       beetles.
+Chemical method:
+Apply lindane 1.6 D @ 50 kg/ha       near the root zone.
+Sugarcane Wooly Aphid,
+Ceratovacuna lanigera
+Symptoms:
+Adults  and nymphs desap leaves by piercing styles through stomata. Whitish patches –  coalesce to turn yellowish and drying from the tip along margins. Leaves become  brittle and dries completely. Heavy secretion of honey dew – development of  sooty mould. Deposition of wooly matter on ground / soil distinctly visible.
+Life cycle:
+Adult emerged after fourth moult  and viviparous reproduction. Apterous (Wingless) female reproduce  parthenogenetically. Each femal produced about 15 – 35 young ones within 24 hr  after mating. Each female reproduces maximum of 217 nymphs during the period of  20 days. The female are more in the population, which leads to fast  multiplication. Nymph takes 6 to 22 days to complete four instars and become  adult.
+The  life cycle of female complete within one – month period. The longevity of adult  is from 32 to 57 days. The life cycle may vary according to the climatic  conditions and variety. In most of the affected fields at various locations all  the nymphal instars and adults are noticed. In extreme cases, the winter is  passed as eggs which are laid during the previous autumn by sexual females. In  spring they hatch and give rise to apterous parthenogenetic viviparous females.  The winged females appear in such swarms as to darken the sky and cover the vegetation.  The non-migratory species, the whole life – cycle is spent on the same plant.
+Management:
+Cultural Method:
+Paired row system of planting.
+Avoid excessive use of       nitrogenous fertilizers.
+Use of organic fertilizers.
+Rapping of canes all along the       rows.
+Infested tops should not be       transported.
+Infested canes should not be       used as seed for planting.
+Biological Method:
+Encourage local predators like       Diapha aphidivora Meyrick – Pyralidae
+Ishchiodon        scutellaris
+Episyrphus        baleatus – Syrphidae
+Chrysopa        spp. – Chryospidae
+Schymnus        sp.
+Cheilomeness        sexmaculata, Coccinella septempunctata, Synnonycha grandis
+Brumus        sp. and
+Dideopsis        aegrota – Coccinellidae
+Pathogens       like Cladosporium oxysporum, Metarhizium anisopliae, Verticillium lecanii       and Beauveria bassiana
+Chemical Method:
+Dip the seed sets in Chlorpyripos  20 EC solution (2 ml / lit) before planting. Apply phorate 10 G @ 5kg / ac or  Spray with acephate75 SP 1g / lit Chlorpyriphos 20 EC 2 ml / lit Malathion 50  EC 2 ml / lit Dimethoate 30 EC 1.7 ml / lit, Oxydemeton methyl 25 EC 1.3 ml /  lit, Dusting with Malathion 5% dust @ 10 kg / ac.
+Whiteflies,
+Aleurolobus barodensis
+Symptom of damage:
+Yellowing of leaves
+Leaf turns pinkish or purple and later gradually dry.
+Infested leaves look white and black dots.
+Life cycle:
+Egg:
+Females lay eggs in a line       near the midrib or any where on the lower surface of the leaves. Eggs are       yellowish with a small curved stalk. Colour changes to black about two       hours after the eggs are laid.
+Nymph & Pupa:
+Neonate nymphs are pale yellow       in colour, flat and oval in shape, later turn shiny black. Its body is       surrounded by fringes of wax.The fourth instar being the pupal stage, is       flat, oval, grayish in colour and slightly bigger than the nymph. There is       a ‘T’ shaped white marking on the thorax, which splits at the time of       adult emergence.
+Adult:
+Pale yellow body with hyaline       wings dusted with waxy bloom, exhibit brisk fluttering movements.
+Management:
+Cultural Method:
+Avoid  indiscriminate use of insecticides for control of other pests such as pyrilla,  black bug, wooly aphids
+Mechanical Method:
+Detrashing the puparia bearing leaves and immediately disposing by burning  or burying to prevent emergence of adult white flies
+Chemical Method:
+Spray fenitrothion 50 EC  @ 2 lit / ha (1000 lit spray fluid)
+Mealybug,
+Saccharicoccus sacchari
+Symptom of damage:
+Pinkish  oval insects beneath leaf sheath on the nodes, with whitish mealy coating, main  cane stunned also attack roots. Sooty mould develops on the honey dew giving  blackish appearance on canes.
+Life cycle:
+Eggs:
+Eggs are retained in the female  reproductive organs untils almost fully mature.   Incubation period is short. The females may bring forth hundreds of  young ones parthenogenetically. Egg is yellowish, smooth, cylindrical and  rounded at both ends.
+Nymph:
+Newly emerged nymphs are quite  active with a pinkish transparent body.
+Adult:
+White with mealy coating, sessile.
+Management:
+Cultural method:
+Use resistant varieties like       CO 439, CO 443, CO 720, CO 730 and CO 7704
+Drain excess water from the       field.
+Physical method:
+Detrash the crop on 150 and       210 DAP
+Chemical method:
+Apply any one of the following       insecticides per ha and when the incidence is noticed spray on the stem       only, methyl parathion 50 EC 1000 ml, malathion 50 EC 1000 ml.
+Scale Insects,
+Melanaspis glomerata
+(Green)
+Symptom of damage:
+The leaves of infested canes show signs of tip drying and unhealthy pale  green colour and with continued infestation these turn yellow.
+Desapping leads to non-opening of leaves also, which also turn yellow and  finally dry up.
+Nodal region is more infested than internodal region.
+Infested crop losses its vigour, canes shrivel, growth is stunted and the  internodal length is reduced drastically.
+Ultimately cane dries up. Such canes when slit open appear brownish red.
+Life cycle:
+Nymph:
+Females multiply ovo-viviparously.  The nymphs that hatch out from the eggs within the female’s body come out  through the genital aperture. They are called ‘crawlers’. They settle after  selecting suitable site for feeding.
+Adult:
+Greyish black or brown circular  scales, they cover the nodal region forming a thick encrustation.
+Management:
+Cultural method:
+Use resistant varieties like       CO 439, CO 443, CO 453, CO 671, CO 691 and CO 692
+Select and plant the scale       insect free setts.
+Keep the fields and bunds free       from weeds.
+Avoid water stagnation in the       field for the longer period.
+Avoid repeated ratoons.
+Physical method:
+Detrash the crop at 150th       and 210th day of planting.
+Biological method:
+Release Chilocoris nigritus       (or) Pharascymnus horni.
+Chemical method:
+Presoak the setts in 0.1%       solution malathion.
+Spray dimethoate 0.06% or 120th       and 150th after detrashing.
+Nematodes
+Symptom:
+Usually paling of leaves, first in the form of streaks, later complete  yellowing-chlorosis, occurring in patches spread out all over the field. Chlorosis  in severe cases, accompanied by drying up of margins and leaf tips is more  common in ratoon and young crop.
+Stunting of crop, reduction in number and size of internodes.
+Roots are stubby and spares.
+Affected field shows pale green to whitish look.
+Nematode types:
+There are  several nematodes present in the soil of which, four nematodes are mainly  damaging the sugarcane crop. They are:
+Lesion  nematode -
+Pratylenchus coffeae
+Root-lesion nematodes are migratory endoparasites Females of
+P.  penetrans
+lay about 1 or 2 eggs/day for about 35 days, with a maximum of 68  eggs being laid by one female. Eggs are laid singly or in clusters in both soil  and roots. Second stage juveniles hatch after eggs have incubated for 9 (30 C)  to 25 (15 C) days. Males are required for reproduction by
+P. penetrans
+but not by
+P. neglectus
+.
+Lance  nematode -
+Hoplolaimus indicus
+Lance nematodes, Hoplolaimus spp., are ecto-parasites, sometimes  semi-endo-parasites. Nematodes which are large and highly resistant to effects  of temperature extremes and dry soil conditions. Larvae look similar to adults  except that they are smaller.This group of nematodes is easily detected with  soil sampling.
+Root knot nematode -
+Meloidogyne
+spp.
+Root knot nematodes are  microscopic roundworms, obligate endo-parasites that  complete most of their life cycle within their host roots. The nematodes  survive in soil as eggs and also second stage larvae.
+Reniform  nematode - Rotylenchulus reniformis
+.
+The term 'reniform' refers to the kidney-shaped  body of the mature female. They are semi-endoparasitic (partially inside roots)  species in which the females penetrate the root cortex, establish a  permanent-feeding site in the stele region of the root and become sedentary or  immobile.
+Management:
+Cultural method:
+Deep  ploughing, solarisation, flooding, crop rotation and apply organic manure.
+Under  wetland conditions, intercropping with sunnhemp or marigold or daincha
+Apply pressmud  at 15 t/ha or poultry manure @ 2 t/ha or neem cake 2 t/ha or poultry manure @ 1  t/ha before last ploughing in garden lands.
+Biological method:
+Application of biocontrol agents  like
+Pochonia chlamydosporia, Paecilomyces lilacinus
+or
+Trichoderma  viride or Pseudomonas fluorescence
+@ 20 kg/ha at the time of planting mixed  with moist FYM or cured pressmud and distributed uniformly will help in  suppressing the plant parasitic nematode.
+Chemical method:
+Apply  carbofuran 3G @ 33 kg/ha at the time of planting or 2 months after planting or Cartap 3 kg/ha (1.5 kg a.i./ha)
+Grasshoppers,
+Hieroglyphus banyan
+Symptom of damage:
+Adult and nymph  grasshoppers feed on leaves from the margins of the leaf blades creating cutout  areas during the solitary stage.
+finally it leaves only  the leaf midrib.
+Identification of pest:
+Egg:
+Eggs in  the form of egg pods, usually more than ten, either in the sand or among leaf  litters. Each egg pod consists of about 10-300 eggs that are rice shaped.
+Nymph:
+Nymphs  are miniature versions of adult grasshoppers, except that they are light in  colour and do not possess wings. The nymphal stage may last for a period of  5-10 days.
+Adult:
+After  about a month, a nymph becomes an adult. An adult grasshopper lives for 1-2  months.
+Management:
+Cultural method:
+Tillage - Tillage controls  grasshoppers primarily by eliminating the green plants on which grasshoppers  feed.
+Biological  method:
+Baits  containing the protozoan
+Nosema locustae
+is a biological control option  that may be considered for treating grasshopper breeding sites. This is sold  under the trade names Nolobait or Semaspore and can produce infection of many  species of grasshoppers. Because it is selective in effects, only affecting  grasshoppers.
+Sugarcane Diseases
+Red rot
+Symptoms
+The affected canes exhibit leaf  colour change, from green to orange and then to yellow in the third or fourth  leaf. Then the leaves start drying from bottom to top. The cane loses its  normal colour and longitudinal discoloration spots / ribs are seen. The  internode region shrinks with rupture of tissue in the root eye region and the  spores are ejected from these spots.  If  the fungal spores enter the leaf sheath through the leaf midrib, then reddish  spots can be seen on the backside of the leaf midrib also. The external  symptoms appear only after16 - 21 days after infection and drying of entire  cane takes another 10 days time. When the affected cane is split opened, the  inner region is reddish in colour with intermittent white tinges across the  cane length. If the variety is highly susceptible or disease incidence is  severe, ash colour fungal growth is seen inside the cane. Sometimes, the pith  inside the cane is filled with blackish brown liquid and exhibited alchohol  odour.
+Identification of pathogen
+Red rot disease is caused by  the fungus
+Glomerella tucumanensis
+. An older name,
+Colletotrichum  falcatum
+, is still preferred by some pathologists.
+Pathogen present on leaf sheaths and  blades, solitary or aggregated, often forming short lines between vascular  bundles, globose, immersed, dark brown to black 65-250 µm diam.; wall up to 8  cells thick, sclerotia on outside, pseudoparenchymatous within, ostiole  slightly papillate, circular.
+Management
+Cultural method:
+The       red rot affected field must be rotated with rice for one season and other       crops for two seasons.
+Growing       of recommended resistant and moderately resistant varieties
+viz
+.,       Co 86249, CoSi 95071, CoG 93076, CoC 22, CoSi 6 and CoG 5
+Physical method:
+Removal       of the affected clumps at an early stage and soil drenching with  Carbandazim 50 WP (1 gm in 1 litre of       water)
+Chemical method:
+Adopt       sett treatment with Carbendazim before planting (Carbendazim 50 WP (0.5 gm       in 1 litre of water) or Carbendazim 25 DS (1gm in 1 litre of water) along       with Urea (10 gm in 1 litre of water) for 5 minutes)
+Sett Rot
+When       diseased setts are planted they may rot before germination, or the shoots       may die after reaching a height of about 6-12 inches.
+As the       setts get dried up, the reddish colour becomes black with lots of black       coloured fungal spores adhering to it.
+If infected shoots survive, they are very much       stunted and chlorotic.
+Eventually the leaves may wither and the shoots       wilt.
+If the affected shoots and setts are examined the       central portion of the shoots will be seen discoloured red and the       contents of the sett rotting.
+When split opened, the affected setts exhibit       pineapple odour.
+Identification  of pathogen:
+C
+eratocytis
+paradoxa
+were initially whitish, measuring about 5 mm in  diameter.  The colonies were turned black  due to the production of chlamydospores, which are heavily pigmented, when  mature.
+Management
+Cultural method:
+Proper       drainage and planting of setts in 1-2 cm depth.
+Chemical method:
+Sett       treatment with Carbendazim or bavistin before planting (Bavistin @ 1per       cent or Carbendazim 50 WP @0.5 gm in 1 litre of water or Carbendazim 25 DS       @ 1gm in 1 litre of water along with Urea @10 gm in 1 litre of water for 5       minutes)
+Pre       treatment the setts with hot water has been found to stimulate germination       of buds and hasten growth soa s to help the young plants to overcome the       competition with the pathogen.
+Smut
+Symptoms
+Production of whip like structure of 25 – 150 cm. from the growing point  of the canes.
+Whip covered by translucent silvery membrane enclosing mass of black  powdery spores.
+Initial thin canes with elongated internodes later become reduced in  length.
+Profuse sprouting of lateral buds with narrow, erect leaves especially in  ratoon crop.
+Identification of pathogen
+Ustilago  scitaminea
+The fungal mycelium spores are  echinulate, light brown and spherical, measuring 6.5 – 8.5 µ in diameter.
+They germinate readily in water,  producing 2-3 celled promycelia.
+sporidia arise terminally or laterally  and they are hyaline, thin walled, single celled and elliptical to linear.
+Management
+Cultural method:
+Growing       of resistant and moderately resistant varieties viz., Co 86249, CoG 93076,       CoC 22, CoSi 6 and CoG 5
+Discourage ratooning of the diseased crops having       more than 10 per cent infection
+Cajanus cajan
+is grown as a companion crop between rows of       sugarcane, the secondary spread of the disease is substantially reduced.
+Physical method:
+Treating       the seed setts with Areated Steam Therapy (AST) at 50 ºC for 1 hour or in       hot water at 50 ºC for 30 minutes or at 52 ºC for 18 minutes
+Roguing       of smut whips with gunny bags/polythene bag and dipped in boiling water       for 1 hour, and diseased clums must be uprooted and burnt
+Chemical method:
+Sett       treatment with fungicides
+viz
+., Triadimefon @ 1gm in 1 litre of       water or Carbendazim @ 1gm in 1 litre of water for 10 minutes.
+Wilt
+Symptoms:
+External:
+Gradual yellowing and drying of foliage, shrinkage/withering of canes.
+Internal:
+Light to dark purplish or brown discolouration of ground  tissue, pithiness and boat shaped cavities in the middle of the internodes.
+Identification of Pathogen
+Conidiosphores  usually erect and branched. Macroconidia abundant, falcate to rather straight,  3-5-septate, with a distinct foot-cell, 27-73 × 3.4-5.2 mm. Blastoconidia  straight or slightly curved, 2-3-septate, fusiform to lanceolate, with a  somewhat pointed, often slightly asymmetrical apical cell and a truncate basal  cell, 16-43 × 3.0-4.5 mm.
+Management
+Cultural method:
+Healthy       seed, sett treatment with fungicides, resistant varieties, crop rotation,       managing root borer, avoiding prolonged drought and water logging and       hygienic practices.
+Chemical Method:
+Dipping       the setts in 40 ppm of boron or manganese, or spraying the plants with       either of these minor elements reduces the disease intensity.
+Rust
+Sugarcane  rust is mainly a disease of the leaf. The earliest symptoms are small,  elongated yellowish spots that are visible on both leaf surfaces. The spots  increase in length, turn brown to orange brown or red brown in color. Pustules,  which produce spores, usually develop on the lower leaf surface.
+Identification of pathogen
+Puccinia erianthi
+Uredinia were elongate,  reddish-brown, with capitate, hyaline to light brown paraphyses.
+Urediniospores were  thick-walled, orange-brown, obovoid, measuring 26-34 x 16-20 µm. The  urediniospore surface was echinulate with 4-5 equatorial pores.
+Teliospores were dark  brown and measured 30-43 x 17-23 µm, clavate, two-celled and slightly  constricted at the septum.
+Management
+Cultural  method:
+Use resistant varieties like Co 91010 (Dhanush), Co 87025 (Kalyani)
+Chemical method:
+Spray Tridemorph 1.0 litres or Mancozeb 2.0 kg/ha.
+Grassy Shoot Disease
+Symptoms
+Initial symptom appears in the young crop of 3 – 4 months  age as thin papery white young leaves at the top of the cane. Later, white or  yellow tillers appear in large number below these leaves (profuse tillering).  The cane becomes stunted with reduced internodal length. There is no millable  cane formation.  At times, one or two  canes grow well in the affected tillers with greenish leaves. When these  seemingly good canes are used for setts, the following crop produces only whitish  leaves; these leaves dry early and gaps in the field.
+Mode of spread
+The disease  is spread by the use of affected setts for planting.
+Also, the  black hopper (
+Browtista moesta
+) acts  as a carrying agent of this disease.
+Management
+Cultural method:
+Growing  resistant varieties viz., Co 86249, CoG 93076 and CoC 22
+Avoid  ratooning if GSD incidence is more than 15 % in the plant crop
+Physical method:
+Rogue out  infected plants in the secondary and commercial seed nursery.
+Treat setts  with aerated steam at 50°C for 1 hour to control primary infection.
+Treating  them with hot air at 540C for 8 hours and spraying twice a month  with aphidicides.
+Chemical  method
+Spray  dimethoate @ 1ml in 1 litre of water to control insect vector
+Yellow Leaf Disease
+Symptom of Damage:
+Yellowing  of midrib and adjacent laminar region and subsequent leaf drying along the mid  rib in 3 to 5 leaves from top. In some cases reddish discolouration is also  seen and in severe cases drying of spindle along with leaves.
+Pathogen:
+The virus  is transmitted by aphids,
+Melanaphis sacchari
+and
+Rhopalosiphum  maidis,
+in a semi-persistent manner.
+SCYLV is a  member of the Luteoviridae family. The virus is localized within the phloem  cells of the plant.
+Management
+Cultural method:
+Use healthy  seed cane
+Field  should be maintain with proper hygiene
+Application  proper nutritional management and use resistant varieties.
+Chemical method:
+Secondary  transmission of the disease by insect vectors can be controlled by application  of Malathion(0.1%) or Dimecron(0.2%).
+Ratoon Stunting
+The affected plants are  stunted, the stunting being most severe in stubble and ratoon crops. Infected stocks  is the presence of pin head like orange coloured dots of bacteria on the  internal soft tissue in the nodal region The setts taken from diseased plants  germinate poorly and the few shoots that are emerge grow very slowly. It is  sap-transmissible and no insect vector has been found.
+Pathogen
+The  organism that causes RSD is,
+Leifsonia xyli
+subsp.
+xyli,
+a small  aerobic bacterium. The genus ofthe pathogen was previously called
+Clavibacter.
+Management
+Cultural method:
+Select healthy setts for        planting.
+Mechanical method:
+Treat        setts with hot water at 50°C for about 2 hours give 100 per cent control.
+Copyright © TNAU | All Rights Reserved

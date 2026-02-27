@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const [messages, setMessages] = useState([
-    { role: "bot", text: "Hello! I'm CropAI 🌾 Upload a crop or leaf image and ask me anything — I can identify crops and detect diseases." }
+    { role: "bot", text: "Hello! I'm CropAI, your smart agriculture assistant.\n\nHere's what I can do for you:\n🌱 Identify crops — upload a field image to detect Jute, Maize, Rice, Sugarcane, or Wheat\n🔬 Detect diseases — upload a leaf image to check for Rice or Sugarcane diseases\n📚 Answer farming questions — ask me anything about Rice or Sugarcane cultivation, pests, irrigation, nutrients, and more\n\nHow can I help you today?" }
   ]);
   const [input, setInput] = useState("");
   const [file, setFile] = useState(null);

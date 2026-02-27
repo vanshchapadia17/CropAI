@@ -1,0 +1,1084 @@
+Source: http://www.agritech.tnau.ac.in/expert_system/sugar/season&varieties.html
+
+Expert System for Sugarcane
+Expert System For Sugarcane
+Home
+|
+About Us
+|
+Contact Us
+Categories
+Botany & Climate
+Season & Varieties
+Nursery Management
+Cultivation Practices
+Sustainable Sugarcane Initiative
+Irrigation Management
+Nutrient Management
+Crop Protection
+Farm Implements
+Post Harvest Technology
+Marketing
+Institutions & Schemes
+FAQ's
+Related Links
+Season and Varieties
+About Season
+Tamil Nadu
+Karnataka
+Kerela
+Tamil Nadu
+Sugarcane is grown chiefly in the main season (December - May) in the entire State. In parts of Tiruchirapalli, Perambalur, Karur, Salem, Namakkal and Coimbatore districts, it is also raised during the special season (June - September). The particulars in respect of each season are given below:
+1.  Main season
+i)
+Early:
+Dec - Jan ii)
+Mid:
+Feb - March  iii)
+Late:
+April - May
+2. Special  season:
+June – July
+Early season varieties are suitable for special season.
+3. Eksali season
+: Throughout the year except June.
+Top of page
+Karnataka
+Sugarcane  planting is done in December-February for the 12-month crop which is called
+Eksali
+, in October-November for the 15 to 16 month crop which is called
+Preseasonal
+,  and in July-August for the 18-month crop, which is called
+Adsali
+.
+Top of page
+Kerela
+The normal planting season is  October-December. Delay in planting reduces cane yield. Planting should not be  delayed beyond February in the plains. In hilly tracts where sugarcane is  cultivated under rain fed conditions, planting should be done after abatement  of heavy rains.
+Top of page
+Varieties
+Particulars  of varieties
+Morphological  characters
+Season  wise suitable varieties
+Suitable  varieties for Tamil Nadu (District wise)
+New  varieties of sugarcane
+Important  variety performance
+Suitable  varieties for Kerala
+Suitable  varieties for Karnataka
+Particulars  of varieties
+Variety
+Duration (Month)
+Cane yield (t/ha)
+CCS %
+CCS  (t/ha)
+CoC 671
+10
+123.5
+14.20
+17.50
+CoC 771
+10
+140.0
+13.10
+18.30
+CoC 772
+10
+143.3
+14.00
+20.00
+CoC 773
+10
+97.5
+13.20
+12.60
+CoC    8001 (C 66191)
+10 - 11
+102.9
+13.20
+13.50
+CoC 774
+11
+159.8
+11.90
+17.90
+CoC 775
+11
+122.5
+13.40
+16.40
+CoC 776
+11
+112.3
+14.00
+15.50
+CoC 777
+12
+171.3
+11.80
+20.00
+CoC 778
+12
+165.5
+11.00
+18.10
+CoC 779
+12
+204.6
+11.80
+24.00
+Co 419
+12
+112.5
+10.50
+11.80
+Co 6304
+12
+115.0
+13.50
+15.50
+CoC    8001
+10-11
+102.5
+13.20
+13.50
+CoC    85061
+10-11
+128.5
+12.90
+16.60
+CoC    86062
+10-11
+133.5
+12.60
+16.80
+CoSi    86071
+10-11
+131.7
+12.20
+16.00
+CoC    90063
+10-11
+124.0
+12.30
+15.40
+Co 8021
+10-11
+137.7
+11.00
+14.60
+CoC    91061
+10-11
+131.0
+11.30
+15.60
+CoC    92061
+8-11
+132.7
+12.76
+16.05
+Co 8362
+11-12
+124.3
+12.40
+15.40
+CoG    93076
+11-12
+132.0
+13.20
+17.40
+Co 8208
+11-13
+141.5
+11.07
+15.28
+CoG    94077
+11
+133.2
+13.5
+17.6
+CoG    95076
+10-11
+108.2
+11.5
+12.4
+Co    85019
+12
+134.5
+12.5
+16.8
+CoSi    95071
+10
+152.0
+12.9
+21
+CoSi    96071
+10
+145.0
+11.9
+17.3
+Co    86010
+10-12
+146.1
+10.78
+15.64
+CoC    98061
+10-11
+120.0
+11.60
+13.80
+CoSi    98071
+12
+144.7
+12.3
+17.7
+Co    86249
+10-12
+128.7
+11.3
+14.3
+CoC    99061
+10-12
+130.3
+11.9
+15.6
+Co    86032
+10-12
+110.0
+13.0
+14.3
+CoC    (SC) 22
+10-12
+135.9
+12.1
+16.5
+Co Si    (SC) 6
+10-11
+142.0
+13.1
+18.6
+CoG    (SC) 5
+11-12
+115.0
+12.7
+14.6
+Top of page
+Morphological  characters
+Characters
+COC 671
+COC 771
+COC 772
+COC 773
+Parentage
+Q63xCO775
+CO419xCO658
+CO740xCO658
+CO658XCO1305
+Leaf size
+Broad
+Broad
+Broad
+Broad
+Leaf colour
+Green
+Green
+Green
+Green
+Sheath colour
+Green with
+Green with
+Green with
+Green with
+purple tinge
+purple tinge
+purple tinge
+purple tinge
+Sheath
+Clasping
+Loose
+Loose
+Loose
+Loose
+Spines
+Present
+Present
+Present
+Present
+Ligular process
+Present
+Absent
+Absent
+Present
+Stem colour
+Green with
+Yellow with
+Yellow with
+Yellow with
+purple tinge
+purple tinge
+Green tinge
+green tinge
+Girth
+Thick
+Medium
+Medium
+Medium
+Joint
+Staggered
+Straight
+Staggered
+Straight
+Bud Groove
+Absent
+Present
+Absent
+Absent
+Size
+Medium
+Medium
+Medium
+Medium
+Character
+COC 8201
+COC 90063
+CO 8021
+COC 91061
+Parentage
+CO740xCO62174
+CO6304XCOC671
+CO740xCO6806
+COC779 G.C.
+Leaf size
+Medium
+Medium
+Medium
+Medium
+Leaf colour
+Green
+Green
+Green
+Green
+Sheath colour
+Green with
+Green
+Purple
+Whitish
+Pink tinge
+Yellow
+Sheath clasping
+Loose
+Loose
+Loose
+Tight
+Spines
+Glabrous
+Present
+Glabrous
+Absent
+Splits
+..
+Absent
+Present
+Absent
+Ligular
+Lanceolate
+Present on
+Present on one
+Absent
+process
+one side
+side Lanceolate
+(4-5 cm)
+Stem colour
+Greenish yellow
+Yellowish green
+Purple with heavy
+Yellowish green
+wax deposition
+Girth
+Medium
+Medium
+Medium
+Medium
+Joint
+Thick
+Staggered
+Erect
+Staggered
+Bud Groove
+Present
+Absent
+Present and
+Absent
+Prominent
+Size
+Medium
+Medium
+Medium/Big
+Small
+Character
+COC 92061
+CO 8362
+COG93076
+CO 8208
+Parentage
+CO 7314 GC
+CO 6304X
+COC 772X
+CO 62198X
+(Natural cross)
+COC 671
+CO 419
+COC 671
+Involving CO6314
+as female
+Leaf size
+Broad
+Medium
+Medium
+Medium
+Leaf colour
+Green
+Green
+Dark green
+Dark green
+Sheath Colour
+Purple with
+Green
+Dark green
+Greenish purple
+heavy bloom
+Sheath clasping
+Loose
+—
+Loose
+—
+Spines
+Deciduous
+Deciduous
+Deciduous
+Deciduous
+Splits
+Absent
+Absent
+Absent
+—
+Ligular process
+One side indica- ted and the other side    rudimentary
+Present on both side
+One side
+Present Asymmetrical
+Stem colour
+Greenish yellow with pink tinge
+Purple green
+Greenish light yellow
+Green with purple tinge
+Girth
+-
+-
+-
+-
+Joint
+Slightly staggered
+Straight
+Slightly staggered
+Straight
+Bud Groove
+Absent
+Absent
+Absent
+Absent
+Size
+Medium
+Medium
+Medium
+Small
+Character
+COG 94077
+COG 95076
+CO 85019
+COSi 95071
+Parentage
+CO 740 x C0 775
+COC 771 x CO 775
+CO 7201 x CO 775
+COC 671x MS 6847
+Leaf size
+Medium
+Medium
+Length 140 cm Medium width 6.0 cm
+Medium
+Leaf colour
+Dark green
+Green
+Light green at harvest
+Green
+Sheath colour
+Greenish with
+Purple tingle
+Green
+Green with purple tinge
+Light greenish yellow
+Sheath
+Easily trashing
+Loose
+Clasping
+Loose
+Loose
+Spines
+Absent
+Present,deciduos
+Hard few
+Absent
+Ligular process
+Present on One side
+one side lanceolate and one side dentoid
+Absent
+Present, Asymmetrical
+Stem colour
+Greenish yellow
+Greenish yellow with purplish tinge
+Exposed purple unexposed yellowish green with heavy    waxy coating
+Greenish yellow
+Girth
+Medium
+Medium
+Medium
+Medium
+Joint
+Slightly staggered
+Slightly staggered
+Zig Zag
+Staggered
+Bud groove
+Short, shallow
+Indicated
+Absent
+Present
+Size
+Medium
+Medium
+Small
+Medium
+Character
+CO Si 96071
+CO 86010
+COC 98061
+CO Si 98071
+CO 86249
+Parentage
+C 82061GC
+CO 740xCo 7409
+C80 172 GC
+Bo 91/Co 62198
+CO J 64 x CoA 7601
+Leaf size
+Medium
+Broad
+Medium
+Broad
+Medium
+Leaf colour
+Green
+Light green
+Green
+Dark green
+Green
+Sheath colour
+Light green with pink blotches
+Light green with pink blotches
+Green with pink tinge
+Yellowish green
+Light green
+Spines
+Present & deciduous
+Absent
+Absent
+Deciduous
+Ligular
+Asymmetrical
+-
+Absent on both sides
+Short lanceolate
+Small, present on one side
+Stem colour
+Purplish
+Yellowish with green tinge
+Greenish yellow with slight purple tinge
+Yellowish green
+Greenish yellow
+Girth
+Medium
+Thick
+Medium
+Thick
+Thick
+Joint
+Concave, convex
+-
+Cylindrical
+Cylindrical
+Cylindrical
+Budgroove
+Absent
+Prominent
+Absent
+Numerous
+Absent
+Size
+Small
+Big
+Medium
+Big
+Big
+Character
+CoC 99061CoC                                   COC 99061
+CO 86032
+COC (SC) 22
+Parentage
+CO 6806 X CO 740
+Co    62198 x CoC 671
+CO    62198 XCOC 671
+CO 8208 GC
+Leaf size
+Medium
+Medium
+Medium
+Leaf colour
+Green
+Dark green
+Green
+Sheath colour
+Green with pink tinge
+Green with purple
+Green with slight scarious    border
+Sheath clasping
+Tight
+Loose
+Loose
+Spines
+Deciduous
+Few, hard, deciduous
+Absent
+Splits
+Absent
+Present
+Absent
+Ligular process
+Present, asymmetrical,
+lanceolate
+“O”
+Present asymmetrical
+Stem colour
+Dark green (Exposed)
+Yellowish green
+(Unexposed)
+Reddish pink (exposed)
+Greenish yellow (unexposed)
+Reddish Pink with purple (exposed)
+Greenish yellow(unexposed)
+Girth
+Medium
+Medium
+Medium
+Joint
+Cylindrical
+Cylinderical
+Cylindrical
+Bud groove
+Absent
+Absent
+Absent
+Size
+Medium
+Medium
+Medium
+Top of page
+Season  wise suitable varieties
+Early
+Mid
+Late
+Special
+Factory
+Jaggery
+Factory
+Jaggery
+Factory
+Jaggery
+Factory
+Jaggery
+Co 658
+Co    62174
+Co    62198
+CoC 671
+CoC 771
+CoC 772
+CoC    8001
+CoC    85061
+CoC    86062
+CoSi    86071
+CoC    90063
+CoC    91061
+CoG    94077
+Co Si    95071
+CoC    98061
+Co    86010
+Co    86249
+-
+-
+-
+CoC 671
+CoC 771
+CoC 772
+CoC    8001
+CoC    85061
+CoC    86062
+CoSi    86071
+CoC    90063
+CoC    91061
+CoG    94077
+-
+-
+-
+-
+Co 658
+-
+Co    62198
+Co 6304
+CoC 774
+CoC 775
+CoC    8001
+-
+-
+-
+-
+-
+CoG    93076
+Co  85019
+CoC    99061
+Co 86032
+CoC(Sc)    22
+Co 419
+Co 449
+Co 6304
+-
+-
+CoC 776
+CoC    8001
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Co 6304
+CoC    8201
+CoC 771
+CoC 778
+CoC 779
+Co 419
+Co 740
+Co 658
+-
+-
+CoG    93076
+Co  85019
+CoC    99061
+Co    86032
+CoC    (SC) 22
+Co    62175
+Co 419
+Co 6304
+CoC    8201
+-
+-
+-
+-
+Co 740
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Early    varieties are suitable for Special
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Top of page
+Suitable  varieties for Tamil Nadu (District wise)
+Place    / District
+Suitable Varieties
+Salient    features
+Pudukkottai
+CoV 92102, CoC 90063, Co Si    (Sc)6, Co G (Sc) 5, Co C (Sc) 22
+Drought tolerance
+Erode
+Co 86032, CoSi 95071, Co 86249,    CoG 93076, CoV 94102, Co 85019, Co Si(Sc)6, Co G (Sc)5, Co C (Sc)22
+Drought tolerance,
+Good yielder
+Vellore
+CoV 92102, CoC 90063
+Co Si(Sc)6, Co G (Sc)5, Co C    (Sc)22
+Good yielder even in
+drought suitable for late
+Planting.
+Sivaganga & Ramnad
+Co 86032, Co 85019, Co Si(Sc)6,    Co G (Sc)5, Co C (Sc)22, Co V 94102
+Performing well in drought
+Thiruvannamalai &
+Kancheepuram
+CoC 90063, CoV 92102, Co 86032,    CoG 94077, Co Si(Sc)6, Co G (Sc)5, Co C (Sc)22
+Drought tolerance and
+better yield.
+Virudhunagar, Tirunelveli &    Tuticorin
+Co 86032, Co 85019, Co Si(Sc)6,
+Co G (Sc)5, Co C (Sc)22
+Performing well in drought
+Dharmapuri & Krishnagiri
+Co 86032, Co Si(Sc)6, Co G (Sc)5,
+Co C (Sc)22, Co 97009, CoV 94101,    CoC 90063, CoSi 95071
+Surviving better in drought.    Drought tolerance and
+better yield.
+Karur
+Co V 92102, CoSi 95071,
+Co Si(Sc)6, Co G (Sc)5, Co C    (Sc)22
+Drought tolerance
+Trichy & Perambalur
+Co Si 95071, CoC 671, CoV 92102,    Co Si(Sc)6, Co G (Sc)5, Co C (Sc)22
+Drought resistant high
+yield.
+Cuddalore
+CoV 92102, CoC 90063, Co Si(Sc)6,    Co G (Sc)5, Co C (Sc)22
+Drought tolerant
+Villuppuram
+Co 86032, CoV 92102, CoC 90063,    Co Si(Sc)6, Co G (Sc)5, Co C (Sc)22
+Drought tolerance and high yield.
+Thanjavur, Nagapattinam
+& Tiruvarur
+Co V 92102, CoG 93076, CoG 94077,    Co Si(Sc)6, Co G (Sc)5, Co C (Sc)22
+Dought tolerance and good yield
+Coimbatore
+Co 86032, CoV 92102, Co 86027,
+CoC 90063, Co 97009, Co Si(Sc)6,    Co G (Sc)5, Co C (Sc)22
+Drought tolerance and
+good yield.
+Tiruvallur
+85019, CoC 22, Co Si(Sc)6,
+Co G (Sc)5, Co C (Sc)22
+Drought tolerance and
+good yield
+Theni, Madurai and
+Dindigul
+Co 92012, Co 94008, Co 93001,
+Co 86032, Co Si(Sc)6, Co G (Sc)5,
+Co C (Sc)22
+Drought tolerance and
+better yield.
+Namakkal & Salem
+CoV 92102, Co Si(Sc)6, Co G    (Sc)5,
+Co C (Sc)22
+Drought tolerance and
+better yield.
+Chengalput
+CoSi 95071, Co 85019, CoC 22,
+Co Si(Sc)6, Co G (Sc)5, Co C    (Sc)22
+Drought tolerance and
+better yield.
+Top of page
+New  varieties of sugarcane
+Two clones evolved at the Sugarcane Breeding Institute,  namely Co 98014 (Karan 1) and Co 99004 (Damodar) have been released as  varieties for the general public during February 2007.
+i. Co 98014 (Karan-1)
+Year of Release
+2007
+Parents
+Co 8316 x Co 8213
+Recommended    region for release
+An early variety (spring planting) suited to North    Western Zone
+General performance factors
+Mean cane yield
+: 76.29 t/ha
+Mean sugar yield
+: 9.26 t/ha
+Meansucrose % in juice(
+10 months): 17.59%
+Red rot reaction
+: Resistant or Moderately    Resistant (MR) to red rot
+Botanical description
+(a).Cane type: Medium thin (b).Colour: Greenish yellow
+(c).Internode shape: Conoidal internodes and long    lanceolate auricle on one side.  (d).Others:    The clone is free from spines, splits, pith, bud groove and bud cushion. Leaf    tip drying is common during summer months.
+ii.
+Co 99004 (Damodar)
+Year of Release
+2007
+Parents
+Co 62175 and Co 86250
+Recommended region for release
+A mid-late variety suited to Peninsular India (Gujarat,    Maharashtra, interior Andhra Pradesh, Tamil nadu, Karnataka and Kerala)
+General performance factors
+Mean cane yield
+: 116.69 t/ha
+Mean sugar yield
+: 16.83 t/ha
+Mean sucrose % in juice
+(12 months): 18.76%
+Disease reaction
+: Resistance to red rot  and wilt
+Others
+: (a) Tolerant to drought and    salinity; (b) Tolerant to internode borer
+(c) Golden yellow A1 quality
+jaggery
+(d) Shy flowering habit
+General characteristics
+The variety has excellent field habits like erectness;    early vigorous growth, dark green foliage, tall canes without spines or    splits and 14% mean fibre content.
+Right seed
+Tamil  Nadu Agricultural University in collaboration with Sugar Cane Breeding  Institute, Coimbatore released many high yielding varieties with high recovery  to suit various eco systems and other biotic and abiotic problematic area and  of which the following listed varieties can be recommended for higher cane  productivity.
+Top of page
+Important variety performance
+Variety
+Performance
+CCS%
+Yield  (t/ha)
+Co 86032
+Performs well in all soil types    and extremely well in garden land condition. Good quality cane with higher    yield. Has multi ratooning capacity. Can be grown throughout the year. Gives    higher recovery. Self detrashing in nature. Amenable for wide row spacing.
+13.0
+110.0
+CoV 92102
+High quality variety with yield    on par with Co 86032. Self stripping with good field habit. Non flowering.    Performs well in red, clay and alkaline soils. Ratoon performance is    satisfactory.
+12.2
+115
+CoSi 95071
+Performs well in December,    January and February planting.
+12.9
+152.0
+CoC 90063
+Non lodging, high tillering, high    yield and good quality. Drought and alkaline tolerant variety and good    ratooner.
+12.30
+124.0
+Co 86027
+Suitable for mid late planting.    Moderate yielder with high sugar. Non lodging and non flowering.
+12.2
+132
+CoV 94101
+Good ratooner. Non lodging.    Suitable for early planting. Thick cane with good tillering.
+12.1
+120
+Co 85019
+Drought tolerant variety.    Resistant to red rot.
+12.5
+134.5
+Co 86249
+Red rot resistant, Drought    tolerant, high yielding.
+11.3
+128.7
+CoV 94102
+Yield is on par with Co 86032 and    quality is lower than  Co 86032
+12.2
+123
+CoSi(Sc) 6
+High yielder and high quality.    Drought tolerant moderately resistant to red rot.
+13.1
+142.0
+CoG(Sc)5
+High yielder suitable for jaggary    making and tannery effluent soils
+12.7
+115.0
+CoC(Sc)22
+High yielder and high quality    drought tolerant moderately resistant to red rot.
+12.1
+135.9
+CoC(SC) 23
+Good ratooner. Non lodging.    Suitable for early and Special season. Drought tolerant.
+12.95
+133.05
+Source of seed
+For the varieties released from Tamil Nadu Agricultural  University for supply of primary seed materials the Sugarcane Research Stations  at Cuddalore, Sirugamani and Melalathur may be contacted. For other varieties  promoted by the factories, for seed materials the concerned factories may be  contacted.
+Top of page
+Suitable varieties for Kerala
+Varieties
+Salient    features
+Co Tl 88322 (Madhuri)
+Resistant to red rot disease
+Co 92175
+Suitable for drought prone    situation
+Co 740
+For rationing
+Co 6907, Co 7405 and Cul 57/84    (Thirumadhuram):
+Red rot resistant, high sugar    content
+Cul 527/85 (Madhurima)
+Resistant to red rot, tolerant to    drought and water logging
+Co 88017 (Madhumathi)
+Resistant to red rot, tolerant to    drought and water logging
+Co    91010 (Dhanush)
+Resistant    to smut, moderately susceptible to red rot,  tolerant to drought
+Co    87025 (Kalyani)
+Resistant to smut,    field resistant to red rot, tolerant to drought and water logging
+Co    87044 (Uttara)
+Moderately resistant    to smut, moderately susceptible to red rot
+Top of page
+Suitable varieties for Karnataka
+Sl No.
+Variety
+Sucrose%
+Region
+Planting Season
+Age at harvest (months)
+Expected Sugar
+Recovery %
+1.
+Co 8371
+Co 86032
+12.5
+Southern & Coastal &    Karnataka
+Aug. 1st week    onwards
+12 to 14
+11.0 to 12.0
+2.
+C0 7804
+Co 62174
+Co 740, Co 98014
+13.0
+Central Karnataka
+June, July, Aug, Oct &    Nov.
+12 to 14
+11.0 to  11.5
+3.
+CoC 671
+Co 94012
+Co 86032
+Co 92020
+Co6415
+Co 7704
+14.5
+Central& North Karnataka
+Oct to Jan.
+12 to 14
+12.0 to 12.5
+4.
+CoC 671
+Co 86032
+Co94012 SNK 754
+SNK 61
+SNK44
+13.2
+North Karnataka
+June  to February
+12 to 14
+12.0 to 12.5
+Gallery
+Copyright © TNAU | All Rights Reserved

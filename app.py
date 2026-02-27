@@ -11,6 +11,7 @@ load_dotenv()
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "CropAI"
 
+from src.logger import logging   # sets up the log file in logs/
 from langchain_core.messages import HumanMessage, AIMessage
 from src.pipeline.predict_pipeline import PredictPipeline
 from src.pipeline.disease_predict_pipeline import DiseasePredictPipeline
@@ -127,12 +128,27 @@ def chat():
             image_path = file_path
             image_url = f"http://localhost:5000/static/chat/{filename}"
 
+        # ── Chat logging ────────────────────────────────────────────────────
+        logging.info("=" * 60)
+        logging.info("NEW CHAT REQUEST")
+        logging.info(f"USER MESSAGE  : {message if message else '(no text)'}")
+        if has_file:
+            logging.info(f"IMAGE UPLOADED: {filename}  |  saved to: {file_path}")
+        else:
+            logging.info("IMAGE UPLOADED: None")
+        # ────────────────────────────────────────────────────────────────────
+
         # Run the agent
         response_text = brain.run(
             user_message=message,
             chat_history=chat_history,
             image_path=image_path
         )
+
+        # ── Log the bot response ─────────────────────────────────────────────
+        logging.info(f"BOT RESPONSE  : {response_text}")
+        logging.info("=" * 60)
+        # ─────────────────────────────────────────────────────────────────────
 
         result = {"response": response_text}
         if image_url:
@@ -141,6 +157,7 @@ def chat():
         return jsonify(result)
 
     except Exception as e:
+        logging.error(f"CHAT ERROR: {e}")
         return jsonify({"error": str(e)}), 500
 
 

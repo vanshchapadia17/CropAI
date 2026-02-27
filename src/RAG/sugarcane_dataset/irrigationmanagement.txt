@@ -1,0 +1,432 @@
+Source: http://www.agritech.tnau.ac.in/expert_system/sugar/irrigationmanagement.html
+
+Expert System for Sugarcane
+Expert System For Sugarcane
+Home
+|
+About Us
+|
+Contact Us
+Categories
+Botany & Climate
+Season & Varieties
+Nursery Management
+Cultivation Practices
+Sustainable Sugarcane Initiative
+Irrigation Management
+Nutrient Management
+Crop Protection
+Farm Implements
+Post Harvest Technology
+Marketing
+Institutions & Schemes
+FAQ's
+Related Links
+Irrigation Management
+About Irrigation Management
+Water requirement
+Irrigation Methods
+Drip irrigation
+Fertigation
+Drought management
+Water requirement
+Depending       upon the agro climatic conditions,       type of soil, methods of planting and use of manures and fertilizers       and sugarcane yield the water requirement varies.The hot weather associated with dry winds and       drought increases the water requirement of the crop.
+The crop sown in trenches needs relatively       less water but sandy soils and application of more fertilizers increase       the water uptake.  On an average 1 ton cane needs about 60-70 tons of       water or  thin varieties of cane       need 150 cm thick canes and need 200 cm water and Adsali planted canes 200       cm, in addition to 75 cm rainfall.  The crop should be irrigated when       available water reaches to 50% level.
+The soil must have sufficient moisture       at the time of sowing.  First irrigation should be done when about       20-25% plant have germinated or about 20 days after sowing and the       irrigations are given at 10-15 days interval during summer, 25-30 days       interval during winter and if there is drought the crop should be       irrigated during rainy season also as and when needed.  The crop       needs maximum water at tillering stage and during elongation or grand       growth phase.
+Under water logging conditions the root       respiration becomes poor.  Nutrients are leached down, activities of       useful micro-organisms are reduced and the crop lodges down with an       excessive branching.  Thus the quality becomes poor along with very       low crop yield.  These all make it necessary to drain the excess       water from the field.
+Top of page
+Average water requirement for sugarcane
+Average       water requirement for sugarcane is 1800 to 2200 mm.
+S.No.
+Crops
+Duration    in days
+Water    requirement (mm)
+No.  of irrigations
+1.
+Sugarcane
+365
+2000
+24
+For 12 months sugarcane crop water  requirement at each growth phase
+Irrigation interval approach
+Growth    Phase
+Duration    of phase
+Water    Requirement
+Germination
+0-45 days
+300mm
+Tillering Phase
+45-120 days
+550mm
+Grand Growth Phase
+120-270 days
+1000mm
+Ripening Phase
+270-360 days
+650mm
+Irrigation  interval in different season and type of soil
+Growth    Phase
+Irrigation    Interval (days)
+Coarse    textured soil
+Medium    textured soil
+Fine    textured soil
+Germination(0-45 days )
+5-6
+6-7
+8-10
+Tillering    Phase(45-120days )
+6-7
+7-10
+12-15
+Grand Growth    Phase(120-270days)
+7
+10
+12-15
+Ripening Phase(270-360    days)
+10
+12-15
+15-20
+Water Use Efficiency of  Different irrigation systems
+Irrigation  system
+Water applied
+(ha -cm)
+Cane  yield (mt/ha)
+Water use efficiency
+C.  C.S. (mt/ha)
+Rain  gun sprinkler
+175.26
+126.56
+0.72
+17.87
+Drip  irrigation
+132.14
+128.64
+0.97
+18.29
+Furrow  irrigation
+258.45
+104.42
+0.4
+14.71
+Poor irrigation leads to
+Decrease  length of internodes
+Decrease  amount of juice and increase percent of fiber
+Decrease  rate of germination
+Decrease  of sugar yield
+Heavy irrigation leads  to
+Death of buds,
+damage to roots,
+sugar content decreases,
+cane yield decreases
+plant can not adsorb elements from soil and becomes       yellowish.
+Top of page
+Irrigation Methods
+Flood  irrigation:
+In Flood irrigation method, free flow of  irrigation water is allowed in the fields in all directions.
+It is practiced in the flat planted cane,  but water loss is high.
+Furrow irrigation:
+Furrow       irrigation is most commonly used and is particularly effective for early       plant crop.
+In       later crop growth periods and during ratoon crops, the water distribution       may become increasingly problematic because of deterioration of the       furrows.
+Reduced       furrow length is sometimes used to allow better distribution of water over       the field in a later stage.
+Alternate skip furrow method:
+In  skip-furrow method, sugarcane is planted in flat beds as usual and   after germination, 45 cm wide and 15 cm deep  furrows were made in alternate inter row spaces.
+There  is considerable saving of water in this method of irrigation.
+In Autumn planting, there are 7 irrigations in plains (5 before rain and 2 after  rain)
+In spring planting, there are 6 irrigations (4 before rain and 2 after rain) -  one irrigation at tillering is must.
+Sprinkler  irrigation:
+For sprinkler irrigation, increasing use is made of spray guns, hand and  automatically moved, replacing the cumbersome boom and labour-intensive  hand-moved sprinkler laterals Prevailing winds of more than 4 or 5 m/sec will  limit their usefulness.
+Drip  irrigation:
+Drip irrigation is defined as the precise, slow and  frequent application of water through point or line source emitters on or below  the soil surface at a small operating pressure (20-200 kPa) and at a low  discharge rate (0.6 to 20 LPH), resulting in partial wetting of the soil  surface.
+Top of page
+Drip Irrigation
+Drip  Irrigation
+Drip irrigation is       defined as the precise, slow and frequent application of water through       point or line source emitters on or below the soil surface at a small       operating pressure (20-200 kPa) and at a low discharge rate (0.6 to 20       LPH), resulting in partial wetting of the soil surface.
+Drip irrigation in sugarcane is a       relatively new innovative technology that can conserve water, energy and       increase profits.
+Drip irrigation may help in solving       three most important problems of irrigated sugarcane - water scarcity,       rising pumping (energy) costs and depressed farm profits
+Drip will be successful       depends on a host of agronomic, engineering and economic factors.
+12 mm drip  laterals have to be placed in the middle ridge of each furrow with the lateral  spacing of 240 cm & 8 ‘Lph’ clog free drippers should be placed with a  spacing of 75 cm on the lateral lines. The lateral length should not exceed  more than 30-40 m.
+Drip Irrigation  is given once in three days based on the evapo-transpiration demand of the  crop.
+Surface       Drip:
+The application of water        to the soil surface as drops or a tiny stream through emitters placed at        predetermined distance along the drip lateral is termed as surface drip        irrigation.
+It can be of two types -        online or integral type surface drip system. Integral dripline is        recommended for sugarcane.
+Top of page
+Subsurface Drip (SDI):
+The application of water        below the soil surface through emitters molded on the inner wall of the        dripline, with discharge rates (1.0 - 3.0 LPH) generally in the same        range as integral surface drip irrigation.
+The integral dripline        (thin or thick-walled) is installed at some predetermined depth in the soil        depending on the soil type and crop requirements.
+There are two main types        of SDI - "one crop" and "multicrop".
+Subsurface irrigation saves water and improves yields by eliminating        surface water evaporation and reducing the incidence of disease and        weeds.
+Advantages
+Save 25-50% of water
+Low requirement of water.
+Evaporation losses get reduce.
+Decrease the number of weeds.
+Period of irrigation is low (2-3 hours)
+The growth of plants is homogeneous.
+Little application of water but gives more yield.
+Decrease the infestation with pests (insects,       diseases and weeds).
+Increasing the area of planting by saving the area       of canals.
+Decreasing man infection by contacting the water (bilharzia       or Schistosomiasis).
+Decreasing the pollution in canals.
+There is  considerable saving of water in this method of irrigation.
+Top of page
+Sugarcane Drip Design Guidelines
+Planting pattern
+Drip system
+Distance (m)
+Dripline installation depth (cm)
+Emitter distance
+(m)
+Discharge
+(LPH)
+Two rows of a pair
+Two paired rows / two rows
+Two driplines
+Single row
+Surface
+---
+1.2 to 1.5
+1.2 to 1.5
+---
+0.4 to 0.6
+1.0 to 3.0
+Paired row
+Surface
+0.4 to 1.0
+1.4 to 2.0
+1.8 to 2.5
+---
+0.4 to 0.6
+1.0 to 3.0
+Paired row
+Sub surface
+0.4 to 1.0
+1.4 to 2.0
+1.8 to 2.5
+0.15 to 0.30
+0.4 to 0.6
+1.0 to 2.3
+Major benefits of drip irrigation
+Water
+Saving irrigation water 40 - 70 %
+Low Labour cost for irrigation
+Increased water use efficiency
+Uniformity in water distribution (90%)
+Suitable for inferior quality irrigation       water
+Use of saline water is possible
+Soil
+Suitable for any type of soil
+Suitable for marginal and undulating       land
+Low tillage requirement
+Top of page
+Fertigation
+Fertigation
+Sugarcane being a giant crop producing huge quantity       of biomass generally demands higher amounts of nutrient elements.
+The cost of chemical fertilizers has also increased       and there is a need to improve fertilizer use efficiency for more       benefits. The best answer to this challenge is "Fertigation",       where both water and fertilizers are delivered to crop simultaneously       through a drip irrigation system.
+Fertigation ensures that essential nutrients are       supplied precisely at the area of most intensive root activity according       to the specific requirements of sugarcane crop and type of soil resulting       in higher cane yields and sugar recovery.
+Concept of fertigation
+Fertigation  is the judicious application of fertilizers by combining with irrigation water.
+Fertigation  can be achieved through fertilizer tank, venturi System, Injector Pump,  Non-Electric Proportional Liquid Dispenser (NEPLD) and automated system.
+Recommended  Nitrogen & Potassium @ of 275 and 112.5 kg/ha  may be applied in 14 equal splits with 15  days interval from 15 DAP.
+25 kg  Nitrogen and 8 kg K2O per ha per split.
+Urea and  MOP (white potash) fertilizers can be used as Nitrogen and Potassium sources  respectively.
+Fertigation  up to 210 DAP can also be recommended.
+Requirement & Type of  Water soluble fertilizers in Sugarcane
+Recommended dose: 275:  62.5:112.5 kg NPK / ha
+For Fertigation recommended:  275:15:112.5 NPK / ha
+Fertigation Schedule
+Crop    stage
+Duration    in days
+Fertilizer grade
+No. of times
+Quantity    (kg/time)
+First    stage
+From    planting to 70 days(5,10….  70th    day)
+12-61-00
+14
+0.9
+13-00-45
+14
+1.8
+Urea
+14
+12.1
+Second    stage
+71    days to 120 days
+12-61-00
+10
+1.2
+13-00-45
+10
+5.0
+Urea
+10
+20.9
+Third    stage
+121    days to 160 days
+12-61-00
+8
+3.1
+13-00-45
+8
+5.6
+Urea
+8
+14.1
+Fourth    stage
+161    day to 210 days
+12-61-00
+10
+2.5
+13-00-45
+10
+6.8
+Urea
+10
+8.3
+Fertigation Schedule for Seasonal (12  months)/Ratoon Sugarcane
+Days After Planting
+Nutrients (kg/ha/day)
+N
+P2O5
+K2O
+1-30 Days
+1.20
+0.10
+0.20
+31-80 Days
+1.50
+0.40
+0.24
+81-110 Days
+2.00
+1.00
+0.40
+111-150 Days
+0.75
+0.30
+0.75
+151-190 Days
+--
+1.50
+Fertigation  Schedule for Preseasonal (14 to 16 months) Sugarcane
+Days After Planting
+Nutrients (kg/ha/day)
+N
+P2O5
+K2O
+1-30 Days
+1.5
+0.15
+0.25
+31-80 Days
+2.0
+0.60
+0.30
+81-110 Days
+2.5
+1.50
+0.50
+111-150 Days
+0.75
+0.50
+1.0
+151-190 Days
+--
+1.80
+Advantages of fertigation
+Ensures a  regular flow of water as well as nutrients resulting in increased growth rates  for higher yields
+Offers  greater versatility in the timing of the nutrient application to meet specific  crop demands
+Safer  application method which eliminates the danger of burning the plant root system
+Offers  simpler and more convenient application than soil application of fertilizer  thus saving time, labour, equipment and energy
+Improves  fertilizer use efficiency
+Reduction  of soil compaction and mechanical damage to the crops
+Convenient  use of compound and ready-mix nutrient solutions containing also small  concentration of micronutrients.
+Free from chlorides and sodium
+No salt build up in the crop root zone
+Most of the fertilizers are blended with micronutrients.
+Fertigation Offers Several Distinct Advantages in  Comparison to Conventional Application Methods:
+Distribution of plant       nutrients more evenly throughout the wetted root zone resulting in       increased nutrient availability & uptake contributing to higher crop       growth rates and cane yields
+Supply of nutrients       incrementally according to the crop developmental phases throughout the       season to meet the actual nutritional requirements of the crop
+Careful regulation and       monitoring the supply of nutrients
+Application of nutrients       to the soil when crop or soil conditions would otherwise prohibit entry       into the field with conventional equipment
+Minimal nutrient losses       through consumption by weeds, leaching and runoff
+No damage to the crop by       root pruning, breakage of leaves, or bending of leaves, as occurs with conventional       fertilizer application methods/equipment
+Less energy is expended       in application of the fertilizer
+Usually less labour &       equipment are required for application of the fertilizer and to supervise       the application
+Soil compaction is       avoided because heavy equipment never enters the field
+No salt injury to foliage
+Allows rising of crop on       marginal lands, where accurate control of water and nutrient ion in the       plant's root environment is critical.
+Fertilizers Suitable for Fertigation Via Drip       Irrigation System
+Nutrient
+Water soluble fertilizers
+Nutrient content
+Nitrogen
+Urea
+Ammonium Nitrate
+Ammonium Sulphate
+Calcium Nitrate
+Magnesium Nitrate
+Urea Ammonium Nitrate
+Potassium Nitrate
+Monoammonium    Phosphate
+46-0-0
+34-0-0
+21-0-0
+16-0-0
+11-0-0
+32-0-0
+13-0-46
+32-0-0
+Phosphorus
+Monoammonium Phosphate
+Monopotassium Phosphate
+Phosphoric Acid
+12-61-0
+0-54-32
+0-82-0
+Potassium
+Potassium Chloride
+Potassium Sulphate
+Potassium Nitrate
+Potassium Thiosulphate
+Monopotassium Phosphate
+0-0-60
+0-0-50
+13-0-46
+0-0-25
+0-52-34
+NPK
+Polyfeed
+19-19-19
+20-20-20
+Micronutrients
+Fe EDTA
+Fe DTPA
+Fe EDDHA
+Zn EDTA
+Ca EDTA
+Rexolin CXK (B+Cu+Fe+Mn+Mo+Zn+Mg)
+13
+12
+6
+15
+9.7
+---
+Top of page
+Drought  Management
+Drought
+Drought is a meteorological term and is defined as a  period without a significant rainfall. Infact, when evapo-transpiration exceeds  soil moisture supply i.e. water uptake, the water deficit/drought is resulted.
+Sugarcane being a long duration crop which requires more  irrigation. In sugarcane, Germination and grand growth phase are  the two important periods which requires more irrigation. In India this period  comes on summer months and availability of water is poor. So the requirement of  water is insufficient during those period which leads to drying of crop and  yield loss.
+Drought Management:
+Planting of  sugarcane in early season at the depth of 30 cm in furrow.
+In drought  area plant the setts with spacing of 60-75 cm instead of 90 cm.
+Soak the  setts in lime solution (80 kg Kiln lime in 400 lit water) for one hour.
+Removal of  dry trash at 5th month and leave it as mulch, in the field. This reduces the  temperature upto 2ºC.
+Spray  potash and urea each at 25 gm in 1 litre of water during moisture stress period  at 15 days interval.
+Spray  Kaolin (60 g in 1 ltr. of water) to alleviate the water stress.
+Under water  scarcity condition, alternate furrow and skip furrow irrigation method is  beneficial.
+Apply 125  kg of Muriate of Potash additionally at 120 day of planting.
+Basal  incorporation of coir waste @ 25 tonnes/ha at the time of last ploughing.
+Use drought  tolerant  resistant varieties like Co  86032, Co 99004, Co 94008 and Co 86249
+Top of page
+Copyright © TNAU | All Rights Reserved
