@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import os
 from urllib.parse import urljoin
 
-BASE_URL = "http://www.agritech.tnau.ac.in/expert_system/sugar/"
+BASE_URL = "https://agritech.tnau.ac.in/agriculture/sugarcrops_sugarcane.html"
 START_PAGE = BASE_URL + "index.html"
 
 visited = set()
