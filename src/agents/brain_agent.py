@@ -10,6 +10,21 @@ from src.agents.tools import (
     answer_crop_question,
     set_image_path,
 )
+from src.pipeline.predict_pipeline import PredictPipeline
+from src.pipeline.disease_predict_pipeline import DiseasePredictPipeline
+
+CROP_MAP = {0: "Jute", 1: "Maize", 2: "Rice", 3: "Sugarcane", 4: "Wheat"}
+DISEASE_MAP = {
+    0: "Bacterial Blight", 1: "Blast", 2: "Brown Spot", 3: "Healthy",
+    4: "Mosaic", 5: "Red Rot", 6: "Rust", 7: "Tungro", 8: "Yellow",
+}
+DISEASE_CROP_MAP = {
+    "Bacterial Blight": "Rice", "Blast": "Rice",
+    "Brown Spot": "Rice",      "Tungro": "Rice",
+    "Healthy": "Sugarcane",    "Mosaic": "Sugarcane",
+    "Red Rot": "Sugarcane",    "Rust": "Sugarcane",
+    "Yellow": "Sugarcane",
+}
 
 SYSTEM_PROMPT = """You are CropAI, an agriculture assistant for crop identification, disease detection (Rice & Sugarcane only), and farming questions.
 
@@ -73,8 +88,47 @@ class BrainAgent:
             max_iterations=3,
         )
 
-    def _fallback_response(self, user_message: str) -> str:
-        """Direct LLM call with no tools — used when the agent executor fails."""
+    def _classify_image_directly(self, image_path: str) -> str:
+        """Run both classifiers and format a reply without any LLM in the loop."""
+        logging.info(f"Fallback: running classifiers directly on {image_path}")
+        try:
+            crop_idx, crop_conf = PredictPipeline().predict(image_path)
+            crop = CROP_MAP[crop_idx]
+        except Exception as e:
+            logging.error(f"Fallback crop classifier failed: {e}")
+            crop, crop_conf = None, None
+
+        try:
+            disease_idx, disease_conf = DiseasePredictPipeline().predict(image_path)
+            disease = DISEASE_MAP[disease_idx]
+            disease_owner = DISEASE_CROP_MAP.get(disease, "Unknown")
+        except Exception as e:
+            logging.error(f"Fallback disease classifier failed: {e}")
+            disease, disease_conf, disease_owner = None, None, None
+
+        if crop is None and disease is None:
+            return "Sorry, I couldn't analyze the image. Please try again."
+
+        lines = []
+        if crop is not None:
+            lines.append(f"Crop: {crop} ({crop_conf:.1f}% confidence)")
+        if disease is not None:
+            lines.append(
+                f"Disease: {disease} ({disease_conf:.1f}% confidence) "
+                f"— typically affects {disease_owner}"
+            )
+        return "\n".join(lines)
+
+    def _fallback_response(self, user_message: str, image_path=None) -> str:
+        """Graceful fallback when the agent executor gives up.
+
+        If an image was uploaded, run the classifiers directly — losing image
+        context here is what caused the "you haven't provided an image" bug.
+        Otherwise, fall back to a bare LLM call with no tools.
+        """
+        if image_path:
+            return self._classify_image_directly(image_path)
+
         logging.warning("Using fallback direct LLM (no tools)")
         try:
             response = self.llm.invoke([
@@ -119,11 +173,11 @@ class BrainAgent:
                 or "max iterations" in output.lower()
             ):
                 logging.warning(f"Agent hit iteration limit: {output!r}")
-                return self._fallback_response(user_message)
+                return self._fallback_response(user_message, image_path=image_path)
 
             logging.info(f"Agent output: {output}")
             return output
 
         except Exception as e:
             logging.warning(f"Agent executor failed ({type(e).__name__}: {e})")
-            return self._fallback_response(user_message)
+            return self._fallback_response(user_message, image_path=image_path)

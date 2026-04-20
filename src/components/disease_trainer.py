@@ -18,7 +18,7 @@ from src.logger import logging
 
 @dataclass
 class DiseaseTrainerConfig:
-    trained_model_file_path = os.path.join("artifacts", "disease_model.h5")
+    trained_model_file_path = os.path.join("artifacts", "disease_model.npy")
 
 class DiseaseTrainer:
     def __init__(self):
@@ -152,10 +152,12 @@ class DiseaseTrainer:
 
             logging.info(f"Disease model training completed. Saving model to: {self.model_trainer_config.trained_model_file_path}")
 
-            # TF 2.12 can't JSON-serialize EfficientNetB0's internal Normalization
-            # layer, so full model.save() to .h5 fails. Save weights only from a
-            # rebuilt inference-time graph (no augmentation) so the predict
-            # pipeline — which builds the same topology — can load them back.
+            # TF 2.12's Keras H5 / SavedModel serializers both try to JSON-encode
+            # layer configs, which breaks on the EagerTensors inside
+            # EfficientNetB0's Normalization layer. Sidestep Keras serialization
+            # entirely: rebuild an inference-only graph (no augmentation) and
+            # dump its weights as a positional numpy object-array. The predict
+            # pipeline builds the same architecture and assigns by position.
             inf_inputs = tf.keras.Input(shape=(224, 224, 3))
             y = base_model(inf_inputs, training=False)
             y = GlobalAveragePooling2D()(y)
@@ -164,7 +166,12 @@ class DiseaseTrainer:
             inference_model = Model(inf_inputs, inf_outputs)
             inference_model.layers[-1].set_weights(model.layers[-1].get_weights())
 
-            inference_model.save_weights(self.model_trainer_config.trained_model_file_path)
+            weights = [w.numpy() for w in inference_model.weights]
+            np.save(
+                self.model_trainer_config.trained_model_file_path,
+                np.array(weights, dtype=object),
+                allow_pickle=True,
+            )
 
             return self.model_trainer_config.trained_model_file_path
 

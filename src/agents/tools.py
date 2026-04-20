@@ -5,7 +5,7 @@ from langchain_core.tools import tool
 from src.pipeline.predict_pipeline import PredictPipeline
 from src.pipeline.disease_predict_pipeline import DiseasePredictPipeline
 from src.logger import logging
-from src.RAG.rag_pipeline import RAGPipeline
+from src.RAG.rerank import RerankRetriever
 
 CROP_MAP = {0: "Jute", 1: "Maize", 2: "Rice", 3: "Sugarcane", 4: "Wheat"}
 DISEASE_MAP = {
@@ -99,8 +99,10 @@ def answer_crop_question(question: str) -> str:
     """
     logging.info(f"answer_crop_question tool called with query: {question}")
     try:
-        pipeline = RAGPipeline.get_instance()
-        results = pipeline.retrieve(question, k=2)   # 2 chunks keeps context tight
+        # Rerank retriever: hybrid (BM25 + dense + RRF) -> cross-encoder rerank.
+        # Eval on 30 golden queries: Hit@5 100%, Hit@3 93%, MRR 0.80, ~630 ms.
+        retriever = RerankRetriever.get_instance()
+        results = retriever.retrieve(question, k=3)   # top-3 covers 93% of queries
 
         if not results:
             return "No relevant information found in the knowledge base for this question."

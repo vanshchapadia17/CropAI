@@ -1,0 +1,685 @@
+{
+  "config": "hybrid",
+  "k": 5,
+  "summary": {
+    "overall": {
+      "n": 30,
+      "mrr": 0.73,
+      "hit@1": 0.6333,
+      "hit@3": 0.8333,
+      "hit@5": 0.9,
+      "avg_latency_ms": 20.8
+    },
+    "by_category": {
+      "rice_cultivation": {
+        "n": 8,
+        "mrr": 0.3208,
+        "hit@1": 0.125,
+        "hit@3": 0.5,
+        "hit@5": 0.75,
+        "avg_latency_ms": 25.4
+      },
+      "rice_disease": {
+        "n": 8,
+        "mrr": 0.8542,
+        "hit@1": 0.75,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "avg_latency_ms": 19.8
+      },
+      "sugarcane_cultivation": {
+        "n": 7,
+        "mrr": 0.8571,
+        "hit@1": 0.8571,
+        "hit@3": 0.8571,
+        "hit@5": 0.8571,
+        "avg_latency_ms": 18.3
+      },
+      "sugarcane_disease": {
+        "n": 7,
+        "mrr": 0.9286,
+        "hit@1": 0.8571,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "avg_latency_ms": 19.2
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "rc1",
+      "category": "rice_cultivation",
+      "query": "What are the different methods of rice cultivation?",
+      "expected": [
+        "agri_cropproduction_cereals_index_new_rice.txt",
+        "agri_cropproduction_cereals_rice.txt"
+      ],
+      "latency_ms": 49.7,
+      "rank": 2,
+      "reciprocal_rank": 0.5,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "another_methods_rice_3.txt",
+        "agri_cropproduction_cereals_index_new_rice.txt",
+        "agri_cropproduction_rice_sri_nursery_mgmt.txt",
+        "sugarcrops_sugarcane.txt",
+        "agri_cropproduction_cereals_rice_aerobic_water_mgmnt.txt"
+      ]
+    },
+    {
+      "id": "rc2",
+      "category": "rice_cultivation",
+      "query": "What is System of Rice Intensification (SRI)?",
+      "expected": [
+        "agri_cropproduction_rice_sri.txt",
+        "agri_cropproduction_rice_sri_main_field.txt"
+      ],
+      "latency_ms": 21.1,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "agri_cropproduction_rice_sri.txt",
+        "agri_cropproduction_rice_sri_nutrient_mgmt.txt",
+        "agri_cropproduction_rice_sri_main_field.txt",
+        "agri_cropproduction_rice_sri_irrigation_mgmt.txt",
+        "agri_cropproduction_rice_sri_lifting_seedling.txt"
+      ]
+    },
+    {
+      "id": "rc3",
+      "category": "rice_cultivation",
+      "query": "How do I prepare the main field for transplanted rice?",
+      "expected": [
+        "agri_cropproduction_cereal_rice_wetseededpudled_fieldpreparation.txt",
+        "agri_Main_Field_preparation_Rice_1.txt"
+      ],
+      "latency_ms": 20.2,
+      "rank": null,
+      "reciprocal_rank": 0.0,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "retrieved": [
+        "agri_cropproduction_rice_sri_main_field.txt",
+        "agri_Main_Field_preparation_Rice.txt",
+        "agri_cropproduction_cereal_rice_wetseededpudled_nutri_mgmt.txt",
+        "agri_Mainfield_root_dipping_Rice.txt",
+        "agri_cropproduction_cereals_rice.txt"
+      ]
+    },
+    {
+      "id": "rc4",
+      "category": "rice_cultivation",
+      "query": "What seed rate is recommended for dry seeded irrigated rice?",
+      "expected": [
+        "agri_cropproduction_cereal_rice_dryseededirrigated_sowing.txt"
+      ],
+      "latency_ms": 28.1,
+      "rank": 3,
+      "reciprocal_rank": 0.3333333333333333,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "agri_cropproduction_cereals_rice_dryseededrainfedsupplirrig_sowing.txt",
+        "agri_cropproduction_cereals_rice_dryseededunpuddledlowland_sowing.txt",
+        "agri_cropproduction_cereal_rice_dryseededirrigated_sowing.txt",
+        "agri_cropproduction_cereal_rice_wetseededpudled_sowing.txt",
+        "agri_cropproduction_cereal_rice_wetseededpudled_nutri_mgmt.txt"
+      ]
+    },
+    {
+      "id": "rc5",
+      "category": "rice_cultivation",
+      "query": "What is the best season to grow rice in Tamil Nadu?",
+      "expected": [
+        "agri_cropproduction_cereal_rice_dryseededirrigated_season.txt",
+        "agri_cropproduction_cereals_rice_varieties.txt"
+      ],
+      "latency_ms": 28.1,
+      "rank": 5,
+      "reciprocal_rank": 0.2,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "retrieved": [
+        "agri_cropproduction_cereals_rice_dryseededunpuddledlowland_season.txt",
+        "agri_seasonandvarieties_rice.txt",
+        "agri_cropproduction_Rice_institute_cereals_rice.txt",
+        "agri_seasonandvarieties_rice.txt",
+        "agri_cropproduction_cereals_rice_varieties.txt"
+      ]
+    },
+    {
+      "id": "rc6",
+      "category": "rice_cultivation",
+      "query": "Which rice varieties are recommended in Tamil Nadu?",
+      "expected": [
+        "agri_cropproduction_cereals_rice_varieties.txt"
+      ],
+      "latency_ms": 18.2,
+      "rank": 5,
+      "reciprocal_rank": 0.2,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "retrieved": [
+        "agri_cropproduction_cereals_rice_dryseededunpuddledlowland_season.txt",
+        "agri_seasonandvarieties_rice.txt",
+        "agri_cropproduction_Rice_institute_cereals_rice.txt",
+        "sugarcrops_sugarcane.txt",
+        "agri_cropproduction_cereals_rice_varieties.txt"
+      ]
+    },
+    {
+      "id": "rc7",
+      "category": "rice_cultivation",
+      "query": "How much fertilizer is needed for dry seeded rice?",
+      "expected": [
+        "agri_cropproduction_cereal_rice_dryseededirrigated_fertilizer.txt",
+        "agri_cropproduction_cereals_rice_dryseededrainfedsupplirrig_fertilizer.txt"
+      ],
+      "latency_ms": 19.1,
+      "rank": 3,
+      "reciprocal_rank": 0.3333333333333333,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "agri_cropproduction_cereals_rice_dryseededunpuddledlowland_fertilizer.txt",
+        "agri_cropproduction_cereal_rice_wetseededpudled_nutri_mgmt.txt",
+        "agri_cropproduction_cereals_rice_dryseededrainfedsupplirrig_fertilizer.txt",
+        "agri_cropproduction_rice_sri_nursery_mgmt.txt",
+        "agri_cropproduction_cereal_rice_dryseededirrigated_fertilizer.txt"
+      ]
+    },
+    {
+      "id": "rc8",
+      "category": "rice_cultivation",
+      "query": "How do I manage weeds in aerobic rice?",
+      "expected": [
+        "agri_cropproduction_cereals_rice_aerobic_weed_mgmnt.txt"
+      ],
+      "latency_ms": 18.7,
+      "rank": null,
+      "reciprocal_rank": 0.0,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "retrieved": [
+        "agri_cropproduction_cereals_rice_aerobic_intro.txt",
+        "agri_cropproduction_cereals_rice_aerobic_intro.txt",
+        "agri_cropproduction_rice_sri_weed_mgmt.txt",
+        "agri_cropproduction_rice_sri_weed_mgmt.txt",
+        "agri_cropproduction_cereals_rice_aerobic_intro.txt"
+      ]
+    },
+    {
+      "id": "rd1",
+      "category": "rice_disease",
+      "query": "What causes rice blast disease?",
+      "expected": [
+        "rice_1.txt"
+      ],
+      "latency_ms": 17.1,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "rice_1.txt",
+        "rice_1.txt",
+        "rice_11.txt",
+        "rice_9.txt",
+        "rice_11.txt"
+      ]
+    },
+    {
+      "id": "rd2",
+      "category": "rice_disease",
+      "query": "What are the symptoms of rice blast?",
+      "expected": [
+        "rice_1.txt"
+      ],
+      "latency_ms": 19.9,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "rice_1.txt",
+        "rice_1.txt",
+        "rice_5.txt",
+        "rice_3.txt",
+        "rice_23.txt"
+      ]
+    },
+    {
+      "id": "rd3",
+      "category": "rice_disease",
+      "query": "How do I control rice blast?",
+      "expected": [
+        "rice_1.txt"
+      ],
+      "latency_ms": 20.9,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "rice_1.txt",
+        "crop_prot_crop_insectpest__cereals_paddy_m11.txt",
+        "seed_cm_rice(hybrids).txt",
+        "sugarcrops_sugarcane.txt",
+        "another_methods_rice_3.txt"
+      ]
+    },
+    {
+      "id": "rd4",
+      "category": "rice_disease",
+      "query": "What is the causal organism of brown spot in rice?",
+      "expected": [
+        "rice_2.txt"
+      ],
+      "latency_ms": 17.2,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "rice_2.txt",
+        "rice_6.txt",
+        "rice_3.txt",
+        "rice_23.txt",
+        "rice_8.txt"
+      ]
+    },
+    {
+      "id": "rd5",
+      "category": "rice_disease",
+      "query": "What are the symptoms of bacterial leaf blight in rice?",
+      "expected": [
+        "rice_3.txt"
+      ],
+      "latency_ms": 19.0,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "rice_3.txt",
+        "rice_23.txt",
+        "rice_6.txt",
+        "rice_8.txt",
+        "rice_5.txt"
+      ]
+    },
+    {
+      "id": "rd6",
+      "category": "rice_disease",
+      "query": "How is rice tungro disease transmitted?",
+      "expected": [
+        "rice_24.txt"
+      ],
+      "latency_ms": 19.9,
+      "rank": 3,
+      "reciprocal_rank": 0.3333333333333333,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "rice_11.txt",
+        "another_methods_rice_23.txt",
+        "rice_24.txt",
+        "rice_24.txt",
+        "rice_24.txt"
+      ]
+    },
+    {
+      "id": "rd7",
+      "category": "rice_disease",
+      "query": "What is the vector for rice tungro virus?",
+      "expected": [
+        "rice_24.txt"
+      ],
+      "latency_ms": 24.2,
+      "rank": 2,
+      "reciprocal_rank": 0.5,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "another_methods_rice_23.txt",
+        "rice_24.txt",
+        "rice_11.txt",
+        "rice_24.txt",
+        "rice_24.txt"
+      ]
+    },
+    {
+      "id": "rd8",
+      "category": "rice_disease",
+      "query": "How to prevent brown spot in rice?",
+      "expected": [
+        "rice_2.txt"
+      ],
+      "latency_ms": 20.2,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "rice_2.txt",
+        "another_methods_rice_2.txt",
+        "crop_prot_crop_insectpest__cereals_paddy_m3.txt",
+        "rice_6.txt",
+        "rice_1.txt"
+      ]
+    },
+    {
+      "id": "sc1",
+      "category": "sugarcane_cultivation",
+      "query": "Which sugarcane varieties are recommended in Tamil Nadu?",
+      "expected": [
+        "sugarcrops_sugarcane.txt"
+      ],
+      "latency_ms": 19.0,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "agri_cropproduction_cereals_rice_dryseededunpuddledlowland_season.txt",
+        "sugarcrops_sugarcane.txt"
+      ]
+    },
+    {
+      "id": "sc2",
+      "category": "sugarcane_cultivation",
+      "query": "What is pit planting in sugarcane?",
+      "expected": [
+        "sugarcrops_sugarcane.txt"
+      ],
+      "latency_ms": 18.2,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt"
+      ]
+    },
+    {
+      "id": "sc3",
+      "category": "sugarcane_cultivation",
+      "query": "How to prepare land for sugarcane planting?",
+      "expected": [
+        "sugarcrops_sugarcane.txt"
+      ],
+      "latency_ms": 17.0,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt"
+      ]
+    },
+    {
+      "id": "sc4",
+      "category": "sugarcane_cultivation",
+      "query": "What is paired row planting in sugarcane?",
+      "expected": [
+        "sugarcrops_sugarcane.txt"
+      ],
+      "latency_ms": 17.0,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt"
+      ]
+    },
+    {
+      "id": "sc5",
+      "category": "sugarcane_cultivation",
+      "query": "When is sugarcane ready for harvest?",
+      "expected": [
+        "sugarcrops_sugarcane.txt"
+      ],
+      "latency_ms": 21.1,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcane_d7.txt",
+        "sugarcrops_sugarcane.txt",
+        "pht_cereal_rice_value_addition_procs_prdct.txt"
+      ]
+    },
+    {
+      "id": "sc6",
+      "category": "sugarcane_cultivation",
+      "query": "Which sugarcane variety is resistant to red rot?",
+      "expected": [
+        "sugarcrops_sugarcane.txt"
+      ],
+      "latency_ms": 18.1,
+      "rank": null,
+      "reciprocal_rank": 0.0,
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "retrieved": [
+        "crop_prot_crop_diseases_cash_crops_sugarcane.txt",
+        "crop_prot_crop_insectpest__sugarcane_8.txt",
+        "sugarcane_d7.txt",
+        "sugarcane_d4.txt",
+        "sugarcane_d4.txt"
+      ]
+    },
+    {
+      "id": "sc7",
+      "category": "sugarcane_cultivation",
+      "query": "How much water does sugarcane need?",
+      "expected": [
+        "sugarcrops_sugarcane.txt"
+      ],
+      "latency_ms": 18.0,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt"
+      ]
+    },
+    {
+      "id": "sd1",
+      "category": "sugarcane_disease",
+      "query": "What causes red rot in sugarcane?",
+      "expected": [
+        "sugarcane_d4.txt"
+      ],
+      "latency_ms": 18.9,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcane_d4.txt",
+        "sugarcane_d7.txt",
+        "crop_prot_crop_insectpest__sugarcane_8.txt",
+        "sugarcane_d4.txt",
+        "crop_prot_crop_diseases_cash_crops_sugarcane.txt"
+      ]
+    },
+    {
+      "id": "sd2",
+      "category": "sugarcane_disease",
+      "query": "What are the symptoms of sugarcane smut?",
+      "expected": [
+        "sugarcane_d2.txt"
+      ],
+      "latency_ms": 18.2,
+      "rank": 2,
+      "reciprocal_rank": 0.5,
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcane_d6.txt",
+        "sugarcane_d2.txt",
+        "sugarcane_d7.txt",
+        "sugarcane_d1.txt",
+        "sugarcane_d8.txt"
+      ]
+    },
+    {
+      "id": "sd3",
+      "category": "sugarcane_disease",
+      "query": "How is sugarcane yellow leaf disease transmitted?",
+      "expected": [
+        "sugarcane_d1.txt"
+      ],
+      "latency_ms": 18.1,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcane_d1.txt",
+        "crop_prot_crop_diseases_cash_crops_sugarcane.txt",
+        "sugarcane_d8.txt",
+        "sugarcane_d1.txt",
+        "sugarcane_d4.txt"
+      ]
+    },
+    {
+      "id": "sd4",
+      "category": "sugarcane_disease",
+      "query": "How do I manage sugarcane rust?",
+      "expected": [
+        "sugarcane_d3.txt"
+      ],
+      "latency_ms": 20.1,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcane_d3.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcane_d3.txt",
+        "sugarcane_pokkah_boe.txt",
+        "sugarcrops_sugarcane.txt"
+      ]
+    },
+    {
+      "id": "sd5",
+      "category": "sugarcane_disease",
+      "query": "What causes pokkah boeng disease in sugarcane?",
+      "expected": [
+        "sugarcane_pokkah_boe.txt"
+      ],
+      "latency_ms": 17.2,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcane_pokkah_boe.txt",
+        "sugarcane_pokkah_boe.txt",
+        "crop_prot_crop_diseases_cash_crops_sugarcane.txt",
+        "sugarcrops_sugarcane.txt",
+        "sugarcane_pokkah_boe.txt"
+      ]
+    },
+    {
+      "id": "sd6",
+      "category": "sugarcane_disease",
+      "query": "What is grassy shoot disease of sugarcane?",
+      "expected": [
+        "sugarcane_d8.txt"
+      ],
+      "latency_ms": 21.2,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcane_d8.txt",
+        "crop_prot_crop_diseases_cash_crops_sugarcane.txt",
+        "crop_prot_crop_insectpest__sugarcanemain.txt",
+        "crop_prot_crop_insectpest__sugarcane_1.txt",
+        "crop_prot_crop_insectpest__sugarcane_3.txt"
+      ]
+    },
+    {
+      "id": "sd7",
+      "category": "sugarcane_disease",
+      "query": "How to control ratoon stunting disease in sugarcane?",
+      "expected": [
+        "sugarcane_d5.txt"
+      ],
+      "latency_ms": 20.9,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "retrieved": [
+        "sugarcane_d5.txt",
+        "crop_prot_crop_diseases_cash_crops_sugarcane.txt",
+        "sugarcane_d8.txt",
+        "sugarcane_d2.txt",
+        "sugarcane_d1.txt"
+      ]
+    }
+  ]
+}
