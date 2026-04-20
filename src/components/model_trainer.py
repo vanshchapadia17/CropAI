@@ -31,11 +31,16 @@ class ModelTrainer:
 
             logging.info("Applying training-time augmentation")
 
-            early_stop = tf.keras.callbacks.EarlyStopping(
-                monitor="val_accuracy",
-                patience=4,
-                restore_best_weights=True
-            )
+            # Fresh EarlyStopping per phase — reusing one instance across the
+            # frozen-base fit and the fine-tune fit carries phase-1's best
+            # val_accuracy into phase 2 and causes premature stop + weight
+            # rollback that erases fine-tuning.
+            def _make_early_stop():
+                return tf.keras.callbacks.EarlyStopping(
+                    monitor="val_accuracy",
+                    patience=4,
+                    restore_best_weights=True,
+                )
 
             X_train_img = tf.convert_to_tensor(X_train_img, dtype=tf.float32)
             X_test_img  = tf.convert_to_tensor(X_test_img, dtype=tf.float32)
@@ -85,7 +90,7 @@ class ModelTrainer:
                 validation_data=(X_test_img, y_test_cat),
                 epochs=5,
                 batch_size=10,
-                callbacks=[early_stop]
+                callbacks=[_make_early_stop()]
             )
 
             # 6. Fine-Tuning (Unfreezing)
@@ -116,7 +121,7 @@ class ModelTrainer:
                 epochs=10,
                 batch_size=16,
                 class_weight=class_weight,
-                callbacks=[early_stop]
+                callbacks=[_make_early_stop()]
             )
 
             logging.info("Generating evaluation metrics")
@@ -156,8 +161,19 @@ class ModelTrainer:
             logging.info(f"Model training completed. Saving model to: {self.model_trainer_config.trained_model_file_path}")
 
             # 7. Save the final model
-            # Note: We use model.save() because h5 files are better saved this way than dill
-            model.save(self.model_trainer_config.trained_model_file_path)
+            # TF 2.12 can't JSON-serialize EfficientNetB0's internal Normalization
+            # layer, so full model.save() to .h5 fails. Save weights only from a
+            # rebuilt inference-time graph (no augmentation) so the predict
+            # pipeline — which builds the same topology — can load them back.
+            inf_inputs = tf.keras.Input(shape=(224, 224, 3))
+            y = base_model(inf_inputs, training=False)
+            y = GlobalAveragePooling2D()(y)
+            y = Dropout(0.2)(y)
+            inf_outputs = Dense(num_classes, activation="softmax")(y)
+            inference_model = Model(inf_inputs, inf_outputs)
+            inference_model.layers[-1].set_weights(model.layers[-1].get_weights())
+
+            inference_model.save_weights(self.model_trainer_config.trained_model_file_path)
 
             return self.model_trainer_config.trained_model_file_path
 

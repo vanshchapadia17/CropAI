@@ -1,0 +1,25 @@
+Source: http://www.agritech.tnau.ac.in/agriculture/agri_Nutrient_mainfeild_ Nitrogen_LCC_Rice.html
+
+Nutrient Management  :: An Introduction Home | Seasons & Varieties | Tillage | Nutrient Mgmnt | Irrigation Mgmnt | Weed Mgmnt | Crop Protection | Cost of Cultivation Photobank Main Field :: Nutrient Management Nitrogen Management Through Leaf Colour Chart (LCC)
+
+Time of application is decided by LCC score.
+
+Take observations from 14 days after transplanting (DAT) in       transplanted rice or 21 days       after sowing (DAS) in direct seeded rice.
+
+Repeat the observations  at weekly intervals up to heading.
+
+Observe the leaf colour in the fully opened third leaf from the top as index leaf.
+
+Match the leaf color with the colours in the chart during morning hours (8-10 am).
+
+Take observation in 10 places.
+
+LCC critical value is 3.0 in low N response cultivars  like White Ponni and 4.0 in other cultivars and hybrids.
+
+In the case of sodic soils, LCC critical value is 4.0 for varieties and 5.0 for hybrids.
+
+When 6/10 observations show less than the critical colour value, N can be applied as per the following recommendation : Application of 25 kg N ha -1 at 7 DAT followed by N @ 40 kg ha-1 each time for kuruvai/ short duration rice / 30 kg ha -1 each time for medium & long duration rice as and when  the leaf colour value falls below the critical value monitored from 14 DAT.
+
+For aged seedlings : Basal application of 35 kg N per ha is recommended to avoid yield loss when seedlings aged 35 - 45 days are used for transplanting and the LCC based N management can be followed from 14 DAT.
+
+Updated on Jan 2023 Seasons & Varieties Tillage Weed Management Cost of Cultivation © All Rights Reserved. TNAU 2008 - 2023.

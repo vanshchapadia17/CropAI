@@ -28,11 +28,16 @@ class DiseaseTrainer:
         try:
             logging.info("Applying training-time augmentation for disease model")
 
-            early_stop = EarlyStopping(
-                monitor="val_accuracy",
-                patience=4,
-                restore_best_weights=True
-            )
+            # Fresh EarlyStopping per phase — reusing one instance across the
+            # frozen-base fit and the fine-tune fit carries phase-1's best
+            # val_accuracy into phase 2 and causes premature stop + weight
+            # rollback that erases fine-tuning.
+            def _make_early_stop():
+                return EarlyStopping(
+                    monitor="val_accuracy",
+                    patience=4,
+                    restore_best_weights=True,
+                )
 
             X_train_img = tf.convert_to_tensor(X_train_img, dtype=tf.float32)
             X_test_img = tf.convert_to_tensor(X_test_img, dtype=tf.float32)
@@ -77,7 +82,7 @@ class DiseaseTrainer:
                 validation_data=(X_test_img, y_test_cat),
                 epochs=5,
                 batch_size=16,
-                callbacks=[early_stop]
+                callbacks=[_make_early_stop()]
             )
 
             # Fine-Tuning
@@ -115,7 +120,7 @@ class DiseaseTrainer:
                 epochs=10,
                 batch_size=32,
                 class_weight=class_weight,
-                callbacks=[early_stop]
+                callbacks=[_make_early_stop()]
             )
 
             logging.info("Generating disease model evaluation metrics")
@@ -147,7 +152,19 @@ class DiseaseTrainer:
 
             logging.info(f"Disease model training completed. Saving model to: {self.model_trainer_config.trained_model_file_path}")
 
-            model.save(self.model_trainer_config.trained_model_file_path)
+            # TF 2.12 can't JSON-serialize EfficientNetB0's internal Normalization
+            # layer, so full model.save() to .h5 fails. Save weights only from a
+            # rebuilt inference-time graph (no augmentation) so the predict
+            # pipeline — which builds the same topology — can load them back.
+            inf_inputs = tf.keras.Input(shape=(224, 224, 3))
+            y = base_model(inf_inputs, training=False)
+            y = GlobalAveragePooling2D()(y)
+            y = Dropout(0.2)(y)
+            inf_outputs = Dense(num_classes, activation="softmax")(y)
+            inference_model = Model(inf_inputs, inf_outputs)
+            inference_model.layers[-1].set_weights(model.layers[-1].get_weights())
+
+            inference_model.save_weights(self.model_trainer_config.trained_model_file_path)
 
             return self.model_trainer_config.trained_model_file_path
 

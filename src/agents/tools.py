@@ -1,3 +1,6 @@
+import contextvars
+from typing import Optional
+
 from langchain_core.tools import tool
 from src.pipeline.predict_pipeline import PredictPipeline
 from src.pipeline.disease_predict_pipeline import DiseasePredictPipeline
@@ -19,9 +22,15 @@ DISEASE_CROP_MAP = {
     "Yellow": "Sugarcane",
 }
 
-# Shared state — set by brain_agent before each executor.invoke()
-current_image_path = None
-last_identified_crop = None
+# Per-request state via ContextVar — safe across threads and concurrent requests.
+# Why: module-level globals leaked state between users under multi-threaded Flask.
+_current_image_path: contextvars.ContextVar[Optional[str]] = contextvars.ContextVar(
+    "cropai_current_image_path", default=None
+)
+
+
+def set_image_path(path: Optional[str]) -> None:
+    _current_image_path.set(path)
 
 
 @tool
@@ -38,19 +47,18 @@ def analyze_image(query: str) -> str:
         Crop classifier result (crop name + confidence)
         Disease classifier result (disease name + confidence + which crop it belongs to)
     """
-    if current_image_path is None:
+    image_path = _current_image_path.get()
+    if image_path is None:
         return "Error: No image uploaded. Please ask the user to upload an image."
 
-    import src.agents.tools as _self
-    logging.info(f"analyze_image tool called with image: {current_image_path}")
+    logging.info(f"analyze_image tool called with image: {image_path}")
 
     # --- Crop classifier ---
     try:
         crop_pipeline = PredictPipeline()
-        crop_idx, crop_conf = crop_pipeline.predict(current_image_path)
+        crop_idx, crop_conf = crop_pipeline.predict(image_path)
         crop_name = CROP_MAP[crop_idx]
         crop_result = f"Crop Classifier  → {crop_name} ({round(crop_conf, 2)}% confidence)"
-        _self.last_identified_crop = crop_name
     except Exception as e:
         crop_result = f"Crop Classifier  → Error: {e}"
         crop_name = None
@@ -58,7 +66,7 @@ def analyze_image(query: str) -> str:
     # --- Disease classifier ---
     try:
         disease_pipeline = DiseasePredictPipeline()
-        disease_idx, disease_conf = disease_pipeline.predict(current_image_path)
+        disease_idx, disease_conf = disease_pipeline.predict(image_path)
         disease_name = DISEASE_MAP[disease_idx]
         disease_crop = DISEASE_CROP_MAP.get(disease_name, "Unknown")
         disease_result = (

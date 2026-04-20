@@ -27,6 +27,16 @@ os.makedirs(DISEASE_UPLOAD_FOLDER, exist_ok=True)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 app.config["DISEASE_UPLOAD_FOLDER"] = DISEASE_UPLOAD_FOLDER
 
+ALLOWED_IMAGE_EXT = {"png", "jpg", "jpeg", "gif", "bmp", "webp"}
+
+
+def _is_image(filename: str) -> bool:
+    return (
+        "." in filename
+        and filename.rsplit(".", 1)[1].lower() in ALLOWED_IMAGE_EXT
+    )
+
+
 CROP_MAP = {
     0: "Jute",
     1: "Maize",
@@ -43,6 +53,8 @@ def predict():
 
         file = request.files["file"]
         filename = secure_filename(file.filename)
+        if not filename or not _is_image(filename):
+            return jsonify({"error": "Unsupported file type. Upload a PNG/JPG image."}), 400
 
         file_path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
         file.save(file_path)
@@ -80,6 +92,8 @@ def predict_disease():
 
         file = request.files["file"]
         filename = secure_filename(file.filename)
+        if not filename or not _is_image(filename):
+            return jsonify({"error": "Unsupported file type. Upload a PNG/JPG image."}), 400
 
         file_path = os.path.join(app.config["DISEASE_UPLOAD_FOLDER"], filename)
         file.save(file_path)
@@ -105,28 +119,51 @@ brain = BrainAgent()
 @app.route("/chat", methods=["POST"])
 def chat():
     try:
-        message = request.form.get("message", "")
+        message = request.form.get("message", "").strip()
         chat_history_raw = request.form.get("chat_history", "[]")
 
-        # Parse chat history from frontend into LangChain message objects
+        # Parse chat history — tolerate malformed/missing JSON instead of crashing.
         chat_history = []
-        for msg in json.loads(chat_history_raw):
-            if msg["role"] == "user":
-                chat_history.append(HumanMessage(content=msg["text"]))
-            elif msg["role"] == "bot":
-                chat_history.append(AIMessage(content=msg["text"]))
+        try:
+            parsed = json.loads(chat_history_raw) if chat_history_raw else []
+            if not isinstance(parsed, list):
+                parsed = []
+        except (json.JSONDecodeError, TypeError):
+            logging.warning("Invalid chat_history JSON — ignoring")
+            parsed = []
 
-        # Handle file upload
+        for msg in parsed:
+            if not isinstance(msg, dict):
+                continue
+            role = msg.get("role")
+            text = msg.get("text", "")
+            if role == "user":
+                chat_history.append(HumanMessage(content=text))
+            elif role == "bot":
+                chat_history.append(AIMessage(content=text))
+
+        # Handle file upload (validate extension)
         image_path = None
         image_url = None
+        filename = None
         has_file = "file" in request.files and request.files["file"].filename != ""
         if has_file:
             file = request.files["file"]
             filename = secure_filename(file.filename)
+            if not filename or not _is_image(filename):
+                return jsonify({
+                    "error": "Unsupported file type. Upload a PNG/JPG image."
+                }), 400
             file_path = os.path.join(CHAT_UPLOAD_FOLDER, filename)
             file.save(file_path)
             image_path = file_path
             image_url = f"http://localhost:5000/static/chat/{filename}"
+
+        # Guard: nothing to respond to
+        if not message and not has_file:
+            return jsonify({
+                "response": "Please ask a question or upload an image."
+            })
 
         # ── Chat logging ────────────────────────────────────────────────────
         logging.info("=" * 60)

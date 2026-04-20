@@ -1,0 +1,67 @@
+Source: http://www.agritech.tnau.ac.in/agriculture/agri_cropproduction_rice_sri_nutrient_mgmt _IPNS tables.html
+
+Crop Production :: Rice ::  System of Rice Intensification (SRI)
+
+Home | Seasons & Varieties | Tillage | Nutrient Mgmnt | Irrigation Mgmnt | Weed Mgmnt | Crop Protection | Cost of Cultivation Photobank Rice :: SRI Cultivation :: Nutrient Management STCR-IPNS Recommendation for Rice under SRI Rice - SRI (1)
+
+Soil :
+
+River alluvium (Noyyal series)
+
+FN = 4.33 T – 0.53 SN – 0.68 ON Season :
+
+Kharif FP 2 O 5 = 2.08 T – 3.18 SP – 0.70 OP Target :
+
+8 t ha -1 FK 2 O = 2.78 T – 0.30 SK – 0.63 OK Initial soil test values (kg ha -1 )
+
+NPK (kg ha -1 ) + GM @ 6.25 t ha -1 + Azospirillum @ 2 kg ha -1 + PSB @ 2 kg ha -1 NPK (kg ha -1 ) + FYM @ 12.5 t ha -1 + Azospirillum @ 2 kg ha -1 + PSB @ 2 kg ha -1 SN SP SK FN FP 2 O 5 FK 2 O FN FP 2 O 5 FK 2 O 200 18 300 187 75** 75** 183 75** 75** 240 22 400 166 73 69 162 64 68 280 26 500 145 61 39 141 52 38 **Maximum dose Note: FN, FP 2 O 5 and K 2 O  are fertilizer N, P 2 O 5 and K 2 O in kg ha -1 , respectively; T is the yield target  in q ha-1; SN, SP and SK respectively are available N,P and K in kg  ha -1 and ON, OP and OK are the quantities of N, P and K supplied  through organic manure in kg ha -1 .
+
+Rice - SRI (2)
+
+Soil :
+
+River alluvium (Noyyal series)
+
+FN     = 4.20 T – 0.45 SN – 0.68 ON Season :
+
+Rabi FP 2 O 5 = 2.05 T – 2.65 SP – 0.66 OP Target :
+
+8 t ha -1 FK 2 O  = 2.85 T – 0.29 SK – 0.59 OK Initial soil test values (kg ha -1 )
+
+NPK (kg ha -1 ) + GM @ 6.25 t ha -1 + Azospirillum @ 2 kg ha -1 + PSB @ 2 kg ha -1 NPK (kg ha -1 ) + FYM @ 12.5 t ha -1 + Azospirillum @ 2 kg ha -1 + PSB @ 2 kg ha -1 SN SP SK FN FP 2 O 5 FK 2 O FN FP 2 O 5 FK 2 O 200 18 300 193 75** 75** 191 75** 75** 240 22 400 175 75** 75** 173 76 75** 280 26 500 157 72 50 155 65 51 **Maximum dose Rice - SRI - White Ponni (3)
+
+Soil :
+
+River    alluvium (Noyyal series)
+
+FN       = 3.43  T – 0.34 SN – 0.64 ON Season :
+
+Rabi FP 2 O 5 = 1.83  T – 3.24 SP – 0.61 OP Target :
+
+6 t ha -1 FK 2 O   = 1.98  T – 0.18 SK – 0.37 OK Initial soil test values (kg ha -1 )
+
+NPK (kg ha -1 ) + GM @ 6.25 t ha -1 + Azospirillum @ 2 kg ha -1 + PSB @ 2 kg ha -1 NPK (kg ha -1 ) + FYM @ 12.5 t ha -1 + Azospirillum @ 2 kg ha -1 + PSB @ 2 kg ha -1 SN SP SK FN FP 2 O 5 FK 2 O FN FP 2 O 5 FK 2 O 200 18 300 85 25* 32 86 25* 35 240 22 400 71 25* 25* 72 25* 25* 280 26 500 58 25* 25* 59 25* 25* *Maintanance dose Rice - SRI (4)
+
+Soil :
+
+River alluvium (Ambasamudram series)
+
+FN       = 3.54T– 0.30 SN – 0.94 ON Season :
+
+Rabi FP 2 O 5 = 1.37T–  0.41 SP – 0.80 OP Target :
+
+7 t ha -1 FK 2 O   = 2.61T  – 0.64 SK –0.61 OK Initial soil test values (kg ha -1 )
+
+NPK (kg ha -1 ) + GM @ 6.25 t ha -1 + Azospirillum @ 2 kg ha -1 + PSB @ 2 kg ha -1 NPK (kg ha -1 ) + FYM @ 12.5 t ha -1 + Azospirillum @ 2 kg ha -1 + PSB @ 2 kg ha -1 SN SP SK FN FP 2 O 5 FK 2 O FN FP 2 O 5 FK 2 O 200 20 150 135 65 54 135 60 57 250 40 200 120 57 25* 120 52 25* 300 60 250 105 48 25* 105 43 25* * Maintenance dose; SP a -  Bray P Rice - SRI (5)
+
+Soil :
+
+Red non    calcareous (Vannapatti    series)
+
+FN       = 3.49  T - 0.36 SN - 0.74 ON Season :
+
+Rabi FP 2 O 5 =1.66  T - 2.76 SP - 0.69 OP Target :
+
+7 t ha -1 FK 2 O   = 2.19  T - 0.66 SK - 0.52 OK Initial soil test values (kg ha -1 )
+
+NPK (kg ha -1 ) + GM @ 6.25 t ha -1 + Azospirillum @ 2 kg ha -1 + PSB @ 2 kg ha -1 NPK (kg ha -1 ) + FYM @ 12.5 t ha -1 + Azospirillum @ 2 kg ha -1 + PSB @ 2 kg ha -1 SN SP SK FN FP 2 O 5 FK 2 O FN FP 2 O 5 FK 2 O 200 12 100 119 60 54 115 51 57 240 16 140 105 49 28 101 40 31 280 20 180 91 38 25* 87 29 25* * Maintanance Dose Updated on  Jan 2023 Seasons & Varieties Tillage Weed Management Cost of Cultivation Photobank Disclaimer © All Rights Reserved. TNAU 2008 - 2023.

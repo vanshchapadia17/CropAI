@@ -5,8 +5,11 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import SystemMessage, HumanMessage
 from langchain.agents import create_tool_calling_agent, AgentExecutor
-import src.agents.tools as agent_tools
-from src.agents.tools import analyze_image, answer_crop_question
+from src.agents.tools import (
+    analyze_image,
+    answer_crop_question,
+    set_image_path,
+)
 
 SYSTEM_PROMPT = """You are CropAI, an agriculture assistant for crop identification, disease detection (Rice & Sugarcane only), and farming questions.
 
@@ -67,7 +70,7 @@ class BrainAgent:
             tools=tools,
             verbose=True,
             handle_parsing_errors=True,
-            max_iterations=2,
+            max_iterations=3,
         )
 
     def _fallback_response(self, user_message: str) -> str:
@@ -88,23 +91,16 @@ class BrainAgent:
 
     def run(self, user_message, chat_history, image_path=None):
         """Run the agent with conversation history and optional image path."""
-        agent_tools.current_image_path = image_path
-
-        # Inject last identified crop so LLM doesn't need to dig through history
-        crop_context = ""
-        if agent_tools.last_identified_crop:
-            crop_context = f"[Previously identified crop: {agent_tools.last_identified_crop}]\n"
+        set_image_path(image_path)
 
         if image_path:
             augmented_message = (
-                f"{crop_context}"
                 f"[Image uploaded — call analyze_image(query='image')]\n"
                 f"User: {user_message}"
             )
         else:
-            augmented_message = f"{crop_context}{user_message}"
+            augmented_message = user_message
 
-        # Keep last 6 messages (3 turns) to limit token usage
         trimmed_history = chat_history[-6:] if len(chat_history) > 6 else chat_history
 
         logging.info(f"Agent input: {augmented_message}")
@@ -114,11 +110,20 @@ class BrainAgent:
                 "input": augmented_message,
                 "chat_history": trimmed_history,
             })
-            logging.info(f"Agent output: {result['output']}")
-            return result["output"]
+            output = result["output"]
+
+            # Guard: AgentExecutor returns a plain string like "Agent stopped due to
+            # max iterations." when it gives up. Never surface that to the user.
+            if isinstance(output, str) and (
+                output.startswith("Agent stopped")
+                or "max iterations" in output.lower()
+            ):
+                logging.warning(f"Agent hit iteration limit: {output!r}")
+                return self._fallback_response(user_message)
+
+            logging.info(f"Agent output: {output}")
+            return output
 
         except Exception as e:
-            # Agent executor failed (Groq tool-call JSON error, network error, etc.)
-            # Always fall back to a plain LLM call — never surface a raw crash to the user
             logging.warning(f"Agent executor failed ({type(e).__name__}: {e})")
             return self._fallback_response(user_message)
