@@ -4,43 +4,28 @@
   "summary": {
     "overall": {
       "n": 30,
-      "mrr": 0.8,
-      "hit@1": 0.6667,
+      "mrr": 0.8167,
+      "hit@1": 0.7,
       "hit@3": 0.9333,
       "hit@5": 1.0,
-      "avg_latency_ms": 599.4,
-      "faithfulness_score": 0.9,
-      "verdicts": {
-        "yes": 24,
-        "partial": 6
-      }
+      "avg_latency_ms": 1612.4
     },
     "by_category": {
       "rice_cultivation": {
         "n": 8,
-        "mrr": 0.5417,
+        "mrr": 0.5208,
         "hit@1": 0.25,
         "hit@3": 0.75,
         "hit@5": 1.0,
-        "avg_latency_ms": 714.4,
-        "faithfulness_score": 0.9375,
-        "verdicts": {
-          "yes": 7,
-          "partial": 1
-        }
+        "avg_latency_ms": 2445.1
       },
       "rice_disease": {
         "n": 8,
-        "mrr": 0.7083,
-        "hit@1": 0.5,
+        "mrr": 0.7917,
+        "hit@1": 0.625,
         "hit@3": 1.0,
         "hit@5": 1.0,
-        "avg_latency_ms": 532.5,
-        "faithfulness_score": 0.9375,
-        "verdicts": {
-          "yes": 7,
-          "partial": 1
-        }
+        "avg_latency_ms": 1263.9
       },
       "sugarcane_cultivation": {
         "n": 7,
@@ -48,12 +33,7 @@
         "hit@1": 1.0,
         "hit@3": 1.0,
         "hit@5": 1.0,
-        "avg_latency_ms": 541.8,
-        "faithfulness_score": 0.7857,
-        "verdicts": {
-          "yes": 4,
-          "partial": 3
-        }
+        "avg_latency_ms": 1293.5
       },
       "sugarcane_disease": {
         "n": 7,
@@ -61,12 +41,7 @@
         "hit@1": 1.0,
         "hit@3": 1.0,
         "hit@5": 1.0,
-        "avg_latency_ms": 601.8,
-        "faithfulness_score": 0.9286,
-        "verdicts": {
-          "yes": 6,
-          "partial": 1
-        }
+        "avg_latency_ms": 1378.1
       }
     }
   },
@@ -79,7 +54,7 @@
         "agri_cropproduction_cereals_index_new_rice.txt",
         "agri_cropproduction_cereals_rice.txt"
       ],
-      "latency_ms": 538.5,
+      "latency_ms": 1296.9,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -89,17 +64,9 @@
         "agri_cropproduction_cereals_index_new_rice.txt",
         "agri_cropproduction_cereals_rice_aerobic_intro.txt",
         "another_methods_rice_3.txt",
-        "agri_cropproduction_cereals_rice_aerobic_water_mgmnt.txt",
-        "agri_cropproduction_rice_sri_nursery_mgmt.txt"
-      ],
-      "faithfulness": {
-        "answer": "According to the provided context, the different methods of rice cultivation mentioned are:\n\n1. Transplanted Rice Conventional Method\n2. System of Rice Intensification (SRI) Cultivation\n3. Direct Sown\n4. Aerobic Rice Cultivation",
-        "verdict": "yes",
-        "reason": "All mentioned methods are directly supported by the context.",
-        "score": 1.0,
-        "gen_ms": 551.7,
-        "judge_ms": 336.8
-      }
+        "agri_cropproduction_cereals_rice.txt",
+        "another_methods_rice_1.txt"
+      ]
     },
     {
       "id": "rc2",
@@ -109,7 +76,7 @@
         "agri_cropproduction_rice_sri.txt",
         "agri_cropproduction_rice_sri_main_field.txt"
       ],
-      "latency_ms": 643.8,
+      "latency_ms": 2458.3,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -121,15 +88,7 @@
         "agri_cropproduction_rice_sri_weed_mgmt.txt",
         "agri_cropproduction_rice_sri_nutrient_mgmt.txt",
         "agri_cropproduction_rice_sri_main_field.txt"
-      ],
-      "faithfulness": {
-        "answer": "The System of Rice Intensification (SRI) is a cultivation method for rice.",
-        "verdict": "yes",
-        "reason": "The answer is directly supported by the context in [1].",
-        "score": 1.0,
-        "gen_ms": 241.0,
-        "judge_ms": 378.2
-      }
+      ]
     },
     {
       "id": "rc3",
@@ -139,7 +98,7 @@
         "agri_cropproduction_cereal_rice_wetseededpudled_fieldpreparation.txt",
         "agri_Main_Field_preparation_Rice_1.txt"
       ],
-      "latency_ms": 710.0,
+      "latency_ms": 2449.0,
       "rank": 2,
       "reciprocal_rank": 0.5,
       "hit@1": false,
@@ -150,16 +109,8 @@
         "agri_Main_Field_preparation_Rice_1.txt",
         "agri_cropproduction_rice_sri_main_field.txt",
         "agri_Mainfield_root_dipping_Rice.txt",
-        "agri_cropproduction_cereals_rice.txt"
-      ],
-      "faithfulness": {
-        "answer": "To prepare the main field for transplanted rice, ploughing has to be done during summer. 1 or 2 days before ploughing, flooding has to be done. The surface of the field should be covered.",
-        "verdict": "yes",
-        "reason": "All claims in the answer are directly supported by the context.",
-        "score": 1.0,
-        "gen_ms": 309.4,
-        "judge_ms": 277.7
-      }
+        "agri_irrigationmgt_cereals_rice1.txt"
+      ]
     },
     {
       "id": "rc4",
@@ -168,7 +119,7 @@
       "expected": [
         "agri_cropproduction_cereal_rice_dryseededirrigated_sowing.txt"
       ],
-      "latency_ms": 691.1,
+      "latency_ms": 2643.4,
       "rank": 3,
       "reciprocal_rank": 0.3333333333333333,
       "hit@1": false,
@@ -180,15 +131,7 @@
         "agri_cropproduction_cereal_rice_dryseededirrigated_sowing.txt",
         "agri_cropproduction_cereal_rice_wetseededpudled_nutri_mgmt.txt",
         "agri_cropproduction_cereal_rice_wetseededpudled_sowing.txt"
-      ],
-      "faithfulness": {
-        "answer": "The recommended seed rate for dry seeded irrigated rice is 75kg/ha.",
-        "verdict": "yes",
-        "reason": "The context directly states that the seed rate for dry seeded irrigated rice is 75kg/ha.",
-        "score": 1.0,
-        "gen_ms": 10395.3,
-        "judge_ms": 8404.0
-      }
+      ]
     },
     {
       "id": "rc5",
@@ -198,7 +141,7 @@
         "agri_cropproduction_cereal_rice_dryseededirrigated_season.txt",
         "agri_cropproduction_cereals_rice_varieties.txt"
       ],
-      "latency_ms": 873.3,
+      "latency_ms": 3516.8,
       "rank": 4,
       "reciprocal_rank": 0.25,
       "hit@1": false,
@@ -210,15 +153,7 @@
         "agri_cropproduction_cereals_index_new_rice.txt",
         "agri_cropproduction_cereals_rice_varieties.txt",
         "agri_cropproduction_Rice_institute_cereals_rice.txt"
-      ],
-      "faithfulness": {
-        "answer": "The best season to grow rice in Tamil Nadu varies by district. For coastal northern districts, the best season is June - July. For coastal southern districts, the best season is September - October.",
-        "verdict": "yes",
-        "reason": "The answer directly references specific seasons and districts mentioned in the context.",
-        "score": 1.0,
-        "gen_ms": 12312.5,
-        "judge_ms": 6930.2
-      }
+      ]
     },
     {
       "id": "rc6",
@@ -227,7 +162,7 @@
       "expected": [
         "agri_cropproduction_cereals_rice_varieties.txt"
       ],
-      "latency_ms": 962.8,
+      "latency_ms": 3217.2,
       "rank": 4,
       "reciprocal_rank": 0.25,
       "hit@1": false,
@@ -239,15 +174,7 @@
         "sugarcrops_sugarcane.txt",
         "agri_cropproduction_cereals_rice_varieties.txt",
         "agri_cropproduction_cereals_index_new_rice.txt"
-      ],
-      "faithfulness": {
-        "answer": "Unfortunately, the provided context does not explicitly mention the recommended rice varieties in Tamil Nadu. However, it does mention some varieties in specific districts, such as Navarai in Tiruvallur, Vellore, Tiruvannamalai, Cuddalore, Villupuram, Tiruchirapalli, and Perambalur.",
-        "verdict": "partial",
-        "reason": "The answer mentions specific varieties but not the ones recommended in general.",
-        "score": 0.5,
-        "gen_ms": 10535.5,
-        "judge_ms": 9610.4
-      }
+      ]
     },
     {
       "id": "rc7",
@@ -257,7 +184,7 @@
         "agri_cropproduction_cereal_rice_dryseededirrigated_fertilizer.txt",
         "agri_cropproduction_cereals_rice_dryseededrainfedsupplirrig_fertilizer.txt"
       ],
-      "latency_ms": 802.8,
+      "latency_ms": 2688.5,
       "rank": 2,
       "reciprocal_rank": 0.5,
       "hit@1": false,
@@ -269,15 +196,7 @@
         "agri_cropproduction_cereal_rice_dryseededirrigated_fertilizer.txt",
         "agri_cropproduction_rice_sri_nursery_mgmt.txt",
         "agri_cropproduction_cereals_rice_dryseededunpuddledlowland_sowing.txt"
-      ],
-      "faithfulness": {
-        "answer": "For dry seeded rainfed un-puddled lowland rice, the blanket recommendation is 50:25:25 kg N:P 2 O 5 :K 2 O /ha. For dry seeded irrigated rice, the blanket recommendation is 75:50:37.5 kg N:P 2 O 5 :K 2 O /ha.",
-        "verdict": "yes",
-        "reason": "Both fertilizer recommendations are directly supported by the provided context.",
-        "score": 1.0,
-        "gen_ms": 11513.4,
-        "judge_ms": 10484.4
-      }
+      ]
     },
     {
       "id": "rc8",
@@ -286,27 +205,19 @@
       "expected": [
         "agri_cropproduction_cereals_rice_aerobic_weed_mgmnt.txt"
       ],
-      "latency_ms": 492.7,
-      "rank": 2,
-      "reciprocal_rank": 0.5,
+      "latency_ms": 1290.7,
+      "rank": 3,
+      "reciprocal_rank": 0.3333333333333333,
       "hit@1": false,
       "hit@3": true,
       "hit@5": true,
       "retrieved": [
         "agri_cropproduction_cereals_rice_aerobic_intro.txt",
+        "agri_cropproduction_cereals_rice_aerobic_water_mgmnt.txt",
         "agri_cropproduction_cereals_rice_aerobic_weed_mgmnt.txt",
         "agri_cropproduction_rice_sri_weed_mgmt.txt",
-        "agri_cropproduction_rice_sri_weed_mgmt.txt",
-        "agri_cropproduction_cereals_rice_aerobic_intro.txt"
-      ],
-      "faithfulness": {
-        "answer": "For aerobic rice, pre-emergence application of pendimethalin at 0.75 kg/ha is recommended, followed by two hand weeding or mechanical weeding on 25 and 45 DAS. Alternatively, rotary weeder, Cono weeder, or power-operated two-row weeder can be used to bury weeds by moving the weeder in forward and backward motion.",
-        "verdict": "yes",
-        "reason": "All methods of weed management mentioned in the answer are directly supported by the context.",
-        "score": 1.0,
-        "gen_ms": 11087.5,
-        "judge_ms": 6512.2
-      }
+        "agri_cropproduction_rice_sri_weed_mgmt.txt"
+      ]
     },
     {
       "id": "rd1",
@@ -315,7 +226,7 @@
       "expected": [
         "rice_1.txt"
       ],
-      "latency_ms": 573.2,
+      "latency_ms": 1234.5,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -325,17 +236,9 @@
         "rice_1.txt",
         "rice_1.txt",
         "crop_prot_crop_diseases_cereals_rice_main.txt",
-        "rice_11.txt",
-        "rice_13.txt"
-      ],
-      "faithfulness": {
-        "answer": "The fungus Magnaporthe oryzae (Syn: P. grisea, Magnaporthe grisea) causes rice blast disease.",
-        "verdict": "yes",
-        "reason": "The context directly mentions Magnaporthe oryzae as the fungus causing rice blast disease.",
-        "score": 1.0,
-        "gen_ms": 9619.9,
-        "judge_ms": 10494.5
-      }
+        "rice_7.txt",
+        "rice_11.txt"
+      ]
     },
     {
       "id": "rd2",
@@ -344,7 +247,7 @@
       "expected": [
         "rice_1.txt"
       ],
-      "latency_ms": 585.3,
+      "latency_ms": 1241.5,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -353,18 +256,10 @@
       "retrieved": [
         "rice_1.txt",
         "rice_1.txt",
-        "rice_3.txt",
-        "rice_23.txt",
-        "rice_5.txt"
-      ],
-      "faithfulness": {
-        "answer": "The fungus attacks the crop at all stages of crop growth from seedling to late tillering and ear heading stage. Symptoms appear on leaves, nodes, rachis, and glumes.",
-        "verdict": "yes",
-        "reason": "The answer directly quotes the provided context.",
-        "score": 1.0,
-        "gen_ms": 6529.7,
-        "judge_ms": 9404.4
-      }
+        "rice_2.txt",
+        "rice_6.txt",
+        "rice_3.txt"
+      ]
     },
     {
       "id": "rd3",
@@ -373,27 +268,19 @@
       "expected": [
         "rice_1.txt"
       ],
-      "latency_ms": 511.1,
-      "rank": 3,
-      "reciprocal_rank": 0.3333333333333333,
-      "hit@1": false,
+      "latency_ms": 1247.5,
+      "rank": 1,
+      "reciprocal_rank": 1.0,
+      "hit@1": true,
       "hit@3": true,
       "hit@5": true,
       "retrieved": [
+        "rice_1.txt",
         "rice_11.txt",
         "crop_prot_crop_insectpest__cereals_paddy_m11.txt",
-        "rice_1.txt",
-        "another_methods_rice_3.txt",
-        "rice_13.txt"
-      ],
-      "faithfulness": {
-        "answer": "I do not have information on how to control rice blast in the provided context.",
-        "verdict": "yes",
-        "reason": "The answer is supported by the context as it explicitly states that the provided context may be adopted for Rice Tungro Disease, but does not mention rice blast.",
-        "score": 1.0,
-        "gen_ms": 7516.6,
-        "judge_ms": 8530.8
-      }
+        "crop_prot_crop_diseases_cereals_rice_main.txt",
+        "rice_8.txt"
+      ]
     },
     {
       "id": "rd4",
@@ -402,7 +289,7 @@
       "expected": [
         "rice_2.txt"
       ],
-      "latency_ms": 530.9,
+      "latency_ms": 1147.7,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -414,15 +301,7 @@
         "rice_6.txt",
         "rice_8.txt",
         "rice_23.txt"
-      ],
-      "faithfulness": {
-        "answer": "The causal organism of brown spot in rice is Helminthosporium oryzae, with its sexual stage being Cochliobolus miyabeanus.",
-        "verdict": "yes",
-        "reason": "The answer directly matches the causal organism of brown spot in rice mentioned in the context.",
-        "score": 1.0,
-        "gen_ms": 7453.3,
-        "judge_ms": 8602.2
-      }
+      ]
     },
     {
       "id": "rd5",
@@ -431,7 +310,7 @@
       "expected": [
         "rice_3.txt"
       ],
-      "latency_ms": 574.7,
+      "latency_ms": 1093.2,
       "rank": 2,
       "reciprocal_rank": 0.5,
       "hit@1": false,
@@ -443,15 +322,7 @@
         "rice_8.txt",
         "rice_6.txt",
         "rice_2.txt"
-      ],
-      "faithfulness": {
-        "answer": "The symptoms of bacterial leaf blight in rice are three types: leaf blight, kresek (the seedling blight or wilt phase), and the pale-yellow leaf.",
-        "verdict": "yes",
-        "reason": "The answer is directly supported by context [1] and [2].",
-        "score": 1.0,
-        "gen_ms": 8450.6,
-        "judge_ms": 8604.6
-      }
+      ]
     },
     {
       "id": "rd6",
@@ -460,7 +331,7 @@
       "expected": [
         "rice_24.txt"
       ],
-      "latency_ms": 487.5,
+      "latency_ms": 1699.1,
       "rank": 3,
       "reciprocal_rank": 0.3333333333333333,
       "hit@1": false,
@@ -472,15 +343,7 @@
         "rice_24.txt",
         "rice_24.txt",
         "rice_11.txt"
-      ],
-      "faithfulness": {
-        "answer": "Rice tungro disease is transmitted by leafhoppers, specifically the green leafhopper, Nephotettix virescens (Distant), and also by Nephotettix nigropictus.",
-        "verdict": "partial",
-        "reason": "Nephotettix nigropictus is mentioned in one context but not in the others.",
-        "score": 0.5,
-        "gen_ms": 7519.3,
-        "judge_ms": 8416.5
-      }
+      ]
     },
     {
       "id": "rd7",
@@ -489,7 +352,7 @@
       "expected": [
         "rice_24.txt"
       ],
-      "latency_ms": 528.8,
+      "latency_ms": 1180.6,
       "rank": 2,
       "reciprocal_rank": 0.5,
       "hit@1": false,
@@ -501,15 +364,7 @@
         "rice_11.txt",
         "crop_prot_crop_insectpest__cereals_paddy_m11.txt",
         "rice_12.txt"
-      ],
-      "faithfulness": {
-        "answer": "The vector for rice tungro virus is the green leafhopper, specifically Nephotettix virescens.",
-        "verdict": "yes",
-        "reason": "The context directly mentions Nephotettix virescens as the vector for rice tungro virus.",
-        "score": 1.0,
-        "gen_ms": 6531.5,
-        "judge_ms": 9486.0
-      }
+      ]
     },
     {
       "id": "rd8",
@@ -518,7 +373,7 @@
       "expected": [
         "rice_2.txt"
       ],
-      "latency_ms": 468.9,
+      "latency_ms": 1266.9,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -530,15 +385,7 @@
         "rice_6.txt",
         "rice_1.txt",
         "another_methods_rice_2.txt"
-      ],
-      "faithfulness": {
-        "answer": "The provided context does not contain information on how to prevent brown spot in rice.",
-        "verdict": "yes",
-        "reason": "The answer is supported by the context as it directly states that the context does not contain information on how to prevent brown spot in rice.",
-        "score": 1.0,
-        "gen_ms": 7614.7,
-        "judge_ms": 8490.0
-      }
+      ]
     },
     {
       "id": "sc1",
@@ -547,7 +394,7 @@
       "expected": [
         "sugarcrops_sugarcane.txt"
       ],
-      "latency_ms": 550.2,
+      "latency_ms": 1404.1,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -559,15 +406,7 @@
         "sugarcrops_sugarcane.txt",
         "agri_cropproduction_cereals_rice_dryseededunpuddledlowland_season.txt",
         "agri_seasonandvarieties_rice.txt"
-      ],
-      "faithfulness": {
-        "answer": "In Tamil Nadu, the following sugarcane varieties are recommended: \n- CoV 92102, CoC 90063, Co Si(Sc)6, Co G (Sc)5, Co C (Sc)22, TNAU SC Si7, TNAU SC Si 8 in Pudukkottai and Erode districts.\n- Co 86032, CoSi 95071, Co 86249, CoG 93076, CoV 94102, Co 85019, Co Si(Sc)6, Co G (Sc)5, Co C (Sc)22, CoC(SC) 24 in Erode district.\n- CoV 92102, CoC 90063, Co Si(Sc)6, Co G (Sc)5, Co C (Sc)22, CoC 24, TNAU SC Si7, TNAU SC Si 8 in Vellore district.\n- CoV 92102, Co Si(Sc)6, Co G (Sc)5, Co C (Sc)22, CoC 24, TNAU SC Si7, TNAU SC Si 8 in Namakkal and Salem districts.\n- CoSi 95071, Co 85019, CoC 22, Co Si(Sc)6, Co G (Sc)5, Co C (Sc)22, CoC 24, T",
-        "verdict": "yes",
-        "reason": "All sugarcane varieties mentioned in the answer are directly listed in the context.",
-        "score": 1.0,
-        "gen_ms": 10725.7,
-        "judge_ms": 15560.5
-      }
+      ]
     },
     {
       "id": "sc2",
@@ -576,7 +415,7 @@
       "expected": [
         "sugarcrops_sugarcane.txt"
       ],
-      "latency_ms": 508.5,
+      "latency_ms": 1111.7,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -588,15 +427,7 @@
         "sugarcrops_sugarcane.txt",
         "sugarcrops_sugarcane.txt",
         "sugarcrops_sugarcane.txt"
-      ],
-      "faithfulness": {
-        "answer": "Pit planting in sugarcane involves planting in pits with a spacing of 1.5 x 1.5 m, with 4,444 pits per hectare.",
-        "verdict": "partial",
-        "reason": "spacing and number of pits per hectare are mentioned in the context, but the context does not specify the exact method of planting in pits.",
-        "score": 0.5,
-        "gen_ms": 8462.0,
-        "judge_ms": 10032.9
-      }
+      ]
     },
     {
       "id": "sc3",
@@ -605,7 +436,7 @@
       "expected": [
         "sugarcrops_sugarcane.txt"
       ],
-      "latency_ms": 521.7,
+      "latency_ms": 1100.5,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -617,15 +448,7 @@
         "sugarcrops_sugarcane.txt",
         "sugarcrops_sugarcane.txt",
         "sugarcrops_sugarcane.txt"
-      ],
-      "faithfulness": {
-        "answer": "For sugarcane planting, the land should be prepared by ploughing and bringing the soil to fine tilth in wetlands. However, in wetlands, preparatory cultivation by ploughing may not be done. Instead, form irrigation and drainage channels of 40 cm depth and 30 cm width at intervals of 6 m across the field and along the field borders.",
-        "verdict": "yes",
-        "reason": "The answer directly quotes and supports the context.",
-        "score": 1.0,
-        "gen_ms": 8483.2,
-        "judge_ms": 10776.5
-      }
+      ]
     },
     {
       "id": "sc4",
@@ -634,7 +457,7 @@
       "expected": [
         "sugarcrops_sugarcane.txt"
       ],
-      "latency_ms": 563.7,
+      "latency_ms": 1200.3,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -643,18 +466,10 @@
       "retrieved": [
         "sugarcrops_sugarcane.txt",
         "sugarcrops_sugarcane.txt",
+        "crop_prot_crop_insectpest__sugarcane_5.txt",
         "sugarcrops_sugarcane.txt",
-        "sugarcrops_sugarcane.txt",
-        "sugarcrops_sugarcane.txt"
-      ],
-      "faithfulness": {
-        "answer": "Paired row planting in sugarcane is a method of planting where setts are placed along the centre of the furrows, and it is also referred to as double side planting. The spacing for paired row planting is 150 + 30 cm.",
-        "verdict": "partial",
-        "reason": "spacing for paired row planting is not consistently mentioned in the context.",
-        "score": 0.5,
-        "gen_ms": 9542.9,
-        "judge_ms": 8612.9
-      }
+        "crop_prot_crop_insectpest__sugarcane_3.txt"
+      ]
     },
     {
       "id": "sc5",
@@ -663,7 +478,7 @@
       "expected": [
         "sugarcrops_sugarcane.txt"
       ],
-      "latency_ms": 571.9,
+      "latency_ms": 1275.1,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -675,15 +490,7 @@
         "sugarcrops_sugarcane.txt",
         "sugarcrops_sugarcane.txt",
         "sugarcrops_sugarcane.txt"
-      ],
-      "faithfulness": {
-        "answer": "Sugarcane is ready for harvest after 11 months. Optimum maturity for harvest is indicated by 18 to 20 per cent brix, which can be assessed by hand refractometer brix survey.",
-        "verdict": "yes",
-        "reason": "The answer is directly supported by the context, specifically by [2] and [3].",
-        "score": 1.0,
-        "gen_ms": 7464.9,
-        "judge_ms": 9487.9
-      }
+      ]
     },
     {
       "id": "sc6",
@@ -692,7 +499,7 @@
       "expected": [
         "sugarcrops_sugarcane.txt"
       ],
-      "latency_ms": 531.6,
+      "latency_ms": 1061.3,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -704,15 +511,7 @@
         "sugarcrops_sugarcane.txt",
         "sugarcane_d4.txt",
         "sugarcane_d4.txt"
-      ],
-      "faithfulness": {
-        "answer": "Several sugarcane varieties are resistant to red rot. They include Co 85019, Co 86249, Co Si(Sc)6, Co C (Sc)22, CoC (SC) 23, CoV 92102, CoSi 95071, CoC 90063, TNAU SC Si7, and TNAU SC Si 8.",
-        "verdict": "partial",
-        "reason": "CoV 92102 is not mentioned as resistant to red rot in the context.",
-        "score": 0.5,
-        "gen_ms": 7581.5,
-        "judge_ms": 10433.2
-      }
+      ]
     },
     {
       "id": "sc7",
@@ -721,7 +520,7 @@
       "expected": [
         "sugarcrops_sugarcane.txt"
       ],
-      "latency_ms": 544.8,
+      "latency_ms": 1901.7,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -733,15 +532,7 @@
         "sugarcrops_sugarcane.txt",
         "sugarcrops_sugarcane.txt",
         "sugarcrops_sugarcane.txt"
-      ],
-      "faithfulness": {
-        "answer": "Irrigation is given once in three days based on the evapo-transpiration demand of the crop.",
-        "verdict": "yes",
-        "reason": "This claim is directly supported by context [4]",
-        "score": 1.0,
-        "gen_ms": 9929.1,
-        "judge_ms": 8610.5
-      }
+      ]
     },
     {
       "id": "sd1",
@@ -750,7 +541,7 @@
       "expected": [
         "sugarcane_d4.txt"
       ],
-      "latency_ms": 585.7,
+      "latency_ms": 1146.7,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -762,15 +553,7 @@
         "sugarcane_d4.txt",
         "sugarcane_d7.txt",
         "crop_prot_crop_insectpest__sugarcane_8.txt"
-      ],
-      "faithfulness": {
-        "answer": "Red rot disease in sugarcane is caused by the fungus Glomerella tucumanensis.",
-        "verdict": "yes",
-        "reason": "The answer directly matches the information in context [3] and [2] about the pathogen causing red rot disease.",
-        "score": 1.0,
-        "gen_ms": 9438.9,
-        "judge_ms": 7489.8
-      }
+      ]
     },
     {
       "id": "sd2",
@@ -779,7 +562,7 @@
       "expected": [
         "sugarcane_d2.txt"
       ],
-      "latency_ms": 567.8,
+      "latency_ms": 1144.0,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -791,15 +574,7 @@
         "sugarcane_d3.txt",
         "sugarcane_d8.txt",
         "sugarcane_d1.txt"
-      ],
-      "faithfulness": {
-        "answer": "The symptoms of sugarcane smut are the production of a whip-like structure (25-150 cm) from the growing point of the canes, covered by a translucent silvery membrane enclosing a mass of black powdery spores.",
-        "verdict": "yes",
-        "reason": "The answer directly quotes the symptoms of sugarcane smut from the provided context.",
-        "score": 1.0,
-        "gen_ms": 8547.9,
-        "judge_ms": 7667.2
-      }
+      ]
     },
     {
       "id": "sd3",
@@ -808,7 +583,7 @@
       "expected": [
         "sugarcane_d1.txt"
       ],
-      "latency_ms": 570.7,
+      "latency_ms": 1134.1,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -820,15 +595,7 @@
         "sugarcane_d4.txt",
         "sugarcane_d8.txt",
         "sugarcane_d6.txt"
-      ],
-      "faithfulness": {
-        "answer": "The sugarcane yellow leaf disease is transmitted by aphids, specifically Melanaphis sacchari and Rhopalosiphum maidis, in a semi-persistent manner.",
-        "verdict": "yes",
-        "reason": "The answer directly quotes the pathogen transmission method from the context.",
-        "score": 1.0,
-        "gen_ms": 9489.5,
-        "judge_ms": 8414.8
-      }
+      ]
     },
     {
       "id": "sd4",
@@ -837,7 +604,7 @@
       "expected": [
         "sugarcane_d3.txt"
       ],
-      "latency_ms": 636.1,
+      "latency_ms": 1343.3,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -849,15 +616,7 @@
         "sugarcrops_sugarcane.txt",
         "sugarcrops_sugarcane.txt",
         "sugarcane_d3.txt"
-      ],
-      "faithfulness": {
-        "answer": "The best means of control for sugarcane rust is to grow resistant varieties.",
-        "verdict": "yes",
-        "reason": "This claim is directly supported by the context in [1] source=sugarcane_d3.txt crop=sugarcane.",
-        "score": 1.0,
-        "gen_ms": 8344.8,
-        "judge_ms": 6669.4
-      }
+      ]
     },
     {
       "id": "sd5",
@@ -866,7 +625,7 @@
       "expected": [
         "sugarcane_pokkah_boe.txt"
       ],
-      "latency_ms": 627.3,
+      "latency_ms": 1120.9,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -878,15 +637,7 @@
         "sugarcane_pokkah_boe.txt",
         "sugarcane_pokkah_boe.txt",
         "sugarcrops_sugarcane.txt"
-      ],
-      "faithfulness": {
-        "answer": "Pokkah boeng disease in sugarcane is caused by the Fusarium species complex, specifically Fusarium sacchari, Fusarium proliferatum, and Fusarium verticillioides.",
-        "verdict": "yes",
-        "reason": "The answer directly quotes the Fusarium species complex as the cause of Pokkah boeng disease in the context.",
-        "score": 1.0,
-        "gen_ms": 7644.1,
-        "judge_ms": 10526.4
-      }
+      ]
     },
     {
       "id": "sd6",
@@ -895,7 +646,7 @@
       "expected": [
         "sugarcane_d8.txt"
       ],
-      "latency_ms": 659.9,
+      "latency_ms": 1242.8,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -904,18 +655,10 @@
       "retrieved": [
         "sugarcane_d8.txt",
         "crop_prot_crop_diseases_cash_crops_sugarcane.txt",
+        "sugarcane_d8.txt",
         "sugarcane_pokkah_boe.txt",
-        "crop_prot_crop_insectpest__sugarcane_1.txt",
-        "sugarcane_d6.txt"
-      ],
-      "faithfulness": {
-        "answer": "Grassy shoot disease of sugarcane appears as thin papery white young leaves at the top of the cane in young crops of 3 \u2013 4 months age, followed by white or yellow tillers below these leaves.",
-        "verdict": "yes",
-        "reason": "The answer directly quotes the symptoms of the disease from the context.",
-        "score": 1.0,
-        "gen_ms": 7581.4,
-        "judge_ms": 9754.2
-      }
+        "sugarcrops_sugarcane.txt"
+      ]
     },
     {
       "id": "sd7",
@@ -924,7 +667,7 @@
       "expected": [
         "sugarcane_d5.txt"
       ],
-      "latency_ms": 565.4,
+      "latency_ms": 2515.0,
       "rank": 1,
       "reciprocal_rank": 1.0,
       "hit@1": true,
@@ -932,19 +675,11 @@
       "hit@5": true,
       "retrieved": [
         "sugarcane_d5.txt",
+        "sugarcrops_sugarcane.txt",
         "sugarcane_pokkah_boe.txt",
-        "crop_prot_crop_insectpest__sugarcane_7.txt",
-        "crop_prot_crop_diseases_cash_crops_sugarcane.txt",
+        "sugarcane_pokkah_boe.txt",
         "crop_prot_crop_insectpest__sugarcane_7.txt"
-      ],
-      "faithfulness": {
-        "answer": "To control ratoon stunting disease in sugarcane, use moderately tolerant variety, such as Co 86032, and avoid highly susceptible varieties.",
-        "verdict": "partial",
-        "reason": "The answer mentions Co 86032 as a moderately tolerant variety, but the context only recommends it as a highly susceptible variety to be avoided.",
-        "score": 0.5,
-        "gen_ms": 7788.3,
-        "judge_ms": 9484.5
-      }
+      ]
     }
   ]
 }

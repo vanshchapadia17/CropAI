@@ -3,6 +3,7 @@ from flask_cors import CORS #for react and flask connection
 from werkzeug.utils import secure_filename
 import os
 import json
+import threading
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -16,6 +17,9 @@ from langchain_core.messages import HumanMessage, AIMessage
 from src.pipeline.predict_pipeline import PredictPipeline
 from src.pipeline.disease_predict_pipeline import DiseasePredictPipeline
 from src.agents.brain_agent import BrainAgent
+from src.agents.tools import get_last_rag_chunks, reset_last_rag_chunks
+from typing import Optional, List
+from src.RAG.faithfulness import FaithfulnessEvaluator, _format_context
 
 app = Flask(__name__)
 CORS(app)
@@ -116,6 +120,38 @@ os.makedirs(CHAT_UPLOAD_FOLDER, exist_ok=True)
 
 brain = BrainAgent()
 
+# Lazy faithfulness evaluator — built on first /chat that has RAG chunks so
+# Flask boot stays fast.
+_faithfulness_evaluator: Optional[FaithfulnessEvaluator] = None
+_faithfulness_lock = threading.Lock()
+
+
+def _get_faithfulness_evaluator() -> FaithfulnessEvaluator:
+    global _faithfulness_evaluator
+    if _faithfulness_evaluator is None:
+        with _faithfulness_lock:
+            if _faithfulness_evaluator is None:
+                _faithfulness_evaluator = FaithfulnessEvaluator()
+    return _faithfulness_evaluator
+
+
+def _judge_async(query: str, chunks: list, answer: str) -> None:
+    """Run the LLM-as-judge faithfulness check off the request thread.
+
+    Why background: judge call adds ~1s of Groq latency that the user shouldn't
+    pay for. Verdict goes to the log file alongside the chat trace.
+    """
+    try:
+        evaluator = _get_faithfulness_evaluator()
+        context = _format_context(chunks)
+        verdict = evaluator.judge_answer(query, answer, context)
+        logging.info(
+            f"FAITHFULNESS  : verdict={verdict['verdict']} "
+            f"reason={verdict['reason']!r}"
+        )
+    except Exception as exc:
+        logging.error(f"Faithfulness check failed: {exc}")
+
 @app.route("/chat", methods=["POST"])
 def chat():
     try:
@@ -175,6 +211,10 @@ def chat():
             logging.info("IMAGE UPLOADED: None")
         # ────────────────────────────────────────────────────────────────────
 
+        # Reset per-request RAG state so faithfulness only fires when this
+        # request actually pulled chunks (not stale from a previous /chat).
+        reset_last_rag_chunks()
+
         # Run the agent
         response_text = brain.run(
             user_message=message,
@@ -185,6 +225,16 @@ def chat():
         # ── Log the bot response ─────────────────────────────────────────────
         logging.info(f"BOT RESPONSE  : {response_text}")
         logging.info("=" * 60)
+
+        # ── Live faithfulness (async, only when RAG was used) ────────────────
+        rag_chunks = get_last_rag_chunks()
+        if rag_chunks and message:
+            threading.Thread(
+                target=_judge_async,
+                args=(message, rag_chunks, response_text),
+                daemon=True,
+            ).start()
+        # ─────────────────────────────────────────────────────────────────────
         # ─────────────────────────────────────────────────────────────────────
 
         result = {"response": response_text}

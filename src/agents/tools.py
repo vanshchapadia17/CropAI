@@ -1,5 +1,5 @@
 import contextvars
-from typing import Optional
+from typing import Any, Dict, List, Optional
 
 from langchain_core.tools import tool
 from src.pipeline.predict_pipeline import PredictPipeline
@@ -28,9 +28,23 @@ _current_image_path: contextvars.ContextVar[Optional[str]] = contextvars.Context
     "cropai_current_image_path", default=None
 )
 
+# Last RAG chunks retrieved during this request — read by /chat to run
+# faithfulness scoring on the actual context the agent saw.
+_last_rag_chunks: contextvars.ContextVar[Optional[List[Dict[str, Any]]]] = contextvars.ContextVar(
+    "cropai_last_rag_chunks", default=None
+)
+
 
 def set_image_path(path: Optional[str]) -> None:
     _current_image_path.set(path)
+
+
+def get_last_rag_chunks() -> Optional[List[Dict[str, Any]]]:
+    return _last_rag_chunks.get()
+
+
+def reset_last_rag_chunks() -> None:
+    _last_rag_chunks.set(None)
 
 
 @tool
@@ -103,6 +117,10 @@ def answer_crop_question(question: str) -> str:
         # Eval on 30 golden queries: Hit@5 100%, Hit@3 93%, MRR 0.80, ~630 ms.
         retriever = RerankRetriever.get_instance()
         results = retriever.retrieve(question, k=3)   # top-3 covers 93% of queries
+
+        # Stash the chunks so /chat can run faithfulness on the same context
+        # the LLM ends up seeing.
+        _last_rag_chunks.set(results)
 
         if not results:
             return "No relevant information found in the knowledge base for this question."
